@@ -1,0 +1,241 @@
+.courseware__intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.courseware__caption {
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-gold-text);
+  margin-bottom: 6px;
+}
+
+.courseware__heading {
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--color-purple);
+  margin-bottom: 6px;
+}
+
+.courseware__sub {
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-gold-text);
+}
+
+.courseware__filters {
+  display: flex;
+  gap: 8px;
+}
+
+.courseware__filter-btn {
+  min-height: 40px;
+  padding: 0 18px;
+  border-radius: var(--radius-pill);
+  background: #fff;
+  border: 1.5px solid var(--color-border-lavender);
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+
+.courseware__filter-btn:hover {
+  border-color: var(--color-purple);
+  color: var(--color-purple);
+}
+
+.courseware__filter-btn.is-active {
+  background: var(--color-purple);
+  border-color: var(--color-purple);
+  color: #fff;
+}
+
+.courseware__summary {
+  border-left: 3px solid var(--color-gold);
+  padding-left: 16px;
+  margin-bottom: 32px;
+}
+
+.courseware__summary h2 {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--color-purple);
+  margin-bottom: 6px;
+}
+
+.courseware__summary p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  max-width: 70ch;
+}
+
+.courseware__table-wrap {
+  border-radius: var(--radius-card);
+  border: 1.5px solid var(--color-border-lavender);
+  overflow-x: auto;
+  margin-bottom: 40px;
+}
+
+.courseware__table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+.courseware__table thead tr {
+  background: var(--color-purple);
+}
+
+.courseware__table th {
+  color: #fff;
+  font-weight: 700;
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: left;
+  padding: 12px 16px;
+}
+
+.courseware__table td {
+  padding: 14px 16px;
+  font-size: 12.5px;
+  color: var(--color-text-secondary);
+  vertical-align: middle;
+}
+
+.courseware__table tbody tr {
+  background: #fff;
+}
+
+.courseware__table tbody tr.is-alt {
+  background: var(--color-lavender-200);
+}
+
+.courseware__level-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  color: var(--color-purple);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.courseware__level-name {
+  font-weight: 700;
+  color: var(--color-purple);
+}
+
+.courseware__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.course-tile {
+  background: #fff;
+  border-radius: var(--radius-card);
+  border: 1.5px solid var(--color-border-lavender);
+  overflow: hidden;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.course-tile:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-purple);
+  box-shadow: 0 10px 22px rgba(62, 31, 102, 0.18);
+}
+
+.course-tile__image {
+  height: 96px;
+  background: var(--color-purple);
+  border-bottom: 3px solid var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold);
+  font-size: 28px;
+}
+
+.course-tile__body {
+  padding: 16px;
+}
+
+.course-tile__row-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.course-tile__chip {
+  background: var(--color-lavender-100);
+  color: var(--color-purple);
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.course-tile__number {
+  color: var(--color-gold);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.course-tile__facts div {
+  margin-bottom: 8px;
+}
+
+.course-tile__facts dt {
+  font-weight: 700;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-gold-text);
+}
+
+.course-tile__facts dd {
+  font-weight: 500;
+  font-size: 10px;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.course-tile__link {
+  margin-top: 8px;
+  background: none;
+  border: none;
+  padding: 0;
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--color-purple);
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .courseware__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .courseware__grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,26 @@
+.site-footer {
+  background: var(--color-purple-deep);
+  border-top: 4px solid var(--color-gold);
+}
+
+.site-footer__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: var(--color-on-purple-text-muted);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.site-footer__bar nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+.site-footer__bar a:hover {
+  color: #fff;
+}

@@ -1,0 +1,42 @@
+/* Shraddha's Music Academy — Design Tokens
+   Source: design_handoff_shraddha_music_site/README.md */
+:root {
+  /* Purple */
+  --color-purple: #3e1f66;
+  --color-purple-deep: #2c1549;
+  --color-purple-darkest: #1e0f33;
+  --color-purple-hover: #2a1446;
+
+  /* Gold */
+  --color-gold: #d6a63b;
+  --color-gold-hover: #e3b957;
+  --color-gold-text: #8a6a1e;
+
+  /* Lavender tints */
+  --color-lavender-100: #efe9f6;
+  --color-lavender-200: #f6f2fa;
+  --color-border-lavender: #e2d9ee;
+  --color-on-purple-text: #d9cfe8;
+  --color-on-purple-text-muted: #b7a3d6;
+
+  /* Ground / text */
+  --color-page-ground: #faf8fc;
+  --color-text-body: #231a30;
+  --color-text-secondary: #4a4057;
+  --color-text-secondary-alt: #5e5850;
+
+  /* Type */
+  --font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Radii */
+  --radius-card: 16px;
+  --radius-modal: 20px;
+  --radius-pill: 999px;
+
+  /* Layout */
+  --content-max-width: 1120px;
+  --content-padding: clamp(20px, 5vw, 48px);
+
+  /* Focus ring */
+  --focus-ring-color: var(--color-gold);
+}
