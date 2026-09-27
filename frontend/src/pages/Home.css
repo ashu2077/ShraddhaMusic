@@ -48,6 +48,15 @@
   margin-bottom: 32px;
 }
 
+.hero__note {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-purple);
+  max-width: 60ch;
+  margin-bottom: 16px;
+}
+
 .hero__ctas {
   display: flex;
   gap: 16px;
@@ -68,10 +77,5 @@
   color: #fff;
   font-weight: 800;
   font-size: clamp(22px, 3vw, 30px);
-  margin-bottom: 12px;
-}
-
-.cta-band__inner p {
-  color: var(--color-on-purple-text);
   margin-bottom: 24px;
 }
