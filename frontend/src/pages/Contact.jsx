@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY } from '../config/emailjs.js';
 import './Contact.css';
 
 const WORD_LIMIT = 1500;
@@ -12,14 +14,40 @@ export default function Contact() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [sendError, setSendError] = useState('');
 
   const wordCount = countWords(message);
   const overLimit = wordCount > WORD_LIMIT;
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (overLimit) return;
-    setSubmitted(true);
+    if (overLimit || sending) return;
+
+    setSending(true);
+    setSendError('');
+
+    emailjs
+      .send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: name,
+          from_email: email,
+          reply_to: email,
+          message,
+        },
+        { publicKey: EMAILJS_PUBLIC_KEY }
+      )
+      .then(() => {
+        setSubmitted(true);
+      })
+      .catch(() => {
+        setSendError('Something went wrong sending your message. Please try again.');
+      })
+      .finally(() => {
+        setSending(false);
+      });
   }
 
   if (submitted) {
@@ -80,8 +108,10 @@ export default function Contact() {
             {overLimit && <span className="contact__counter-warning"> — please shorten your message below {WORD_LIMIT} words.</span>}
           </div>
 
-          <button type="submit" className="btn btn-primary" disabled={overLimit}>
-            Send message
+          {sendError && <p className="contact__error">{sendError}</p>}
+
+          <button type="submit" className="btn btn-primary" disabled={overLimit || sending}>
+            {sending ? 'Sending…' : 'Send message'}
           </button>
         </form>
       </div>

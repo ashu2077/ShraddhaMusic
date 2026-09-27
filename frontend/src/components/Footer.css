@@ -3,6 +3,32 @@
   border-top: 4px solid var(--color-gold);
 }
 
+.site-footer__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.site-footer__social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: var(--color-on-purple-text-muted);
+}
+
+.site-footer__social-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.site-footer__social-link:hover {
+  color: #fff;
+}
+
 .site-footer__bar {
   display: flex;
   align-items: center;
