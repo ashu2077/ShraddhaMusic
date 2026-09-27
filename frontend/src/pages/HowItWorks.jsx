@@ -6,12 +6,12 @@ const STEPS = [
     text: '',
   },
   {
-    title: 'Sign up for 20 minutes free student assessment session',
+    title: 'Sign up for 30 minutes free student assessment session',
     text: 'Using the scheduling feature on the app schedule a 30 minutes slot.',
   },
   {
     title: 'Complete the assessment as scheduled',
-    text: 'You will receive a completed assessment within 24–48 hrs after the session, including instructions on how to get started.',
+    text: 'You will receive a completed assessment via email within 24–48 hrs after the session, including instructions on how to get started.',
   },
   {
     title: 'Register for recommended classes',
