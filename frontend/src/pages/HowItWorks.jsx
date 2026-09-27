@@ -54,7 +54,6 @@ export default function HowItWorks() {
                   <h3 className="how__title">{step.title}</h3>
                   {step.text && <p className="how__text">{step.text}</p>}
                 </div>
-                <div className="how__visual" aria-hidden="true" />
               </li>
             ))}
           </ol>

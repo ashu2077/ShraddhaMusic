@@ -4,7 +4,7 @@
 
 .how__step {
   display: grid;
-  grid-template-columns: 40px 1fr 96px;
+  grid-template-columns: 40px 1fr;
   gap: 20px;
 }
 
@@ -18,8 +18,8 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: var(--color-purple);
-  color: #fff;
+  background: var(--color-gold);
+  color: var(--color-purple);
   font-weight: 700;
   font-size: 14px;
   display: flex;
@@ -51,14 +51,6 @@
   font-size: 12px;
   line-height: 1.4;
   color: var(--color-text-secondary-alt);
-}
-
-.how__visual {
-  width: 72px;
-  height: 72px;
-  border-radius: var(--radius-card);
-  background: var(--color-lavender-100);
-  border: 1.5px dashed var(--color-border-lavender);
 }
 
 .need {
@@ -106,12 +98,3 @@
   max-width: 760px;
 }
 
-@media (max-width: 640px) {
-  .how__step {
-    grid-template-columns: 40px 1fr;
-  }
-
-  .how__visual {
-    display: none;
-  }
-}
