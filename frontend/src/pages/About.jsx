@@ -15,7 +15,7 @@ export default function About() {
           <h2 className="about__heading">Teaching philosophy</h2>
           <p className="about__philosophy">
             Foundational musical education is most successful when it balances engagement with
-            structural rigor. At Shraddha Music Studio, we equip young learners with core musical
+            structural rigor. At Shraddha's Music Academy, we equip young learners with core musical
             competencies, including fluent sight-reading, two-handed coordination, and nuanced
             rhythmic expression. We achieve this through a customized curriculum tailored to the
             cognitive learning styles of young children, leveraging interactive application, active
