@@ -42,7 +42,8 @@ export default function Contact() {
       .then(() => {
         setSubmitted(true);
       })
-      .catch(() => {
+      .catch((error) => {
+        console.error('EmailJS send failed:', error?.status, error?.text || error);
         setSendError('Something went wrong sending your message. Please try again.');
       })
       .finally(() => {
