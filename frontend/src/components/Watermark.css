@@ -1,0 +1,14 @@
+.watermark {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.watermark__icon {
+  position: absolute;
+  filter: grayscale(100%);
+  opacity: 0.1;
+  user-select: none;
+}

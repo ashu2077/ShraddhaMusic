@@ -15,29 +15,7 @@
   object-fit: cover;
 }
 
-.hero {
-  position: relative;
-  overflow: hidden;
-}
-
-.hero__notes-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.hero__notes-bg .music-note {
-  position: absolute;
-  color: var(--color-purple);
-  opacity: 0.08;
-  line-height: 1;
-  user-select: none;
-}
-
 .hero__inner {
-  position: relative;
-  z-index: 1;
   max-width: 1120px;
 }
 
@@ -85,28 +63,9 @@
 
 .cta-band {
   background: var(--color-purple);
-  position: relative;
-  overflow: hidden;
-}
-
-.cta-band__notes-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.cta-band__notes-bg .music-note {
-  position: absolute;
-  color: #fff;
-  opacity: 0.12;
-  line-height: 1;
-  user-select: none;
 }
 
 .cta-band__inner {
-  position: relative;
-  z-index: 1;
   padding-top: clamp(28px, 4vw, 44px);
   padding-bottom: clamp(28px, 4vw, 44px);
   text-align: center;
