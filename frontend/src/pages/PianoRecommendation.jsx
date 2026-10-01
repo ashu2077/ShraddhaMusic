@@ -20,18 +20,6 @@ const PIANOS = [
     specs: ['88 keys', '200 sounds and rhythms', 'Metronome', 'Double up sounds', 'Has Bluetooth'],
   },
   {
-    name: 'Yamaha P-145',
-    price: '$599',
-    note: "Wouldn't recommend",
-    specs: [
-      '88 weighted keys',
-      'Heaviest keys',
-      "Doesn't come with a pedal",
-      'Has a metronome',
-      'Not able to access all features in a simple way',
-    ],
-  },
-  {
     name: 'Casio PX-S1100',
     price: '$579',
     specs: ['88 keys', 'Textured keys — gives grip', 'Bluetooth, MIDI'],
