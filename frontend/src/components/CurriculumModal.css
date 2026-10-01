@@ -68,6 +68,13 @@
   margin-bottom: 16px;
 }
 
+.curriculum-modal__lead {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-purple);
+  margin-bottom: 12px;
+}
+
 .curriculum-modal__overview {
   font-size: 14px;
   line-height: 1.6;

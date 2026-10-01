@@ -46,12 +46,15 @@ export default function CurriculumModal({ open, onClose }) {
             Piano lessons for new musicians — taught virtually, one-on-one.
           </p>
 
+          <p className="curriculum-modal__lead">Where every keystroke builds confidence.</p>
+
           <p className="curriculum-modal__overview">
-            Learning piano should feel like play before it feels like practice. At Shraddha's
-            Music Academy, students build real musical skill — reading notation, playing with both
-            hands, understanding rhythm and expression — through a customized structured
-            curriculum designed around how each student learns: through games, listening, and
-            small wins that build confidence one session at a time.
+            Learning piano should feel like play before it ever feels like practice. That's the
+            heart of Shraddha's Music Academy. Our students don't just press keys; they learn to
+            speak music. They read notation, play hands-together, and feel rhythm and expression
+            come alive. Each student follows a custom curriculum shaped around how they learn
+            best, through games, listening, and small wins that strike the right chord. Lesson by
+            lesson, the confidence builds like a melody you can't stop humming.
           </p>
 
           <h3 className="curriculum-modal__subheading">How Lessons Work</h3>
