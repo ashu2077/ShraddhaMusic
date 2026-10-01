@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { COURSE_LEVELS, FILTERS, matchesFilter } from '../data/courseLevels.js';
 import CourseModal from '../components/CourseModal.jsx';
+import CurriculumModal from '../components/CurriculumModal.jsx';
 import './Courseware.css';
 
 export default function Courseware() {
   const [filter, setFilter] = useState('All');
   const [selectedLevel, setSelectedLevel] = useState(null);
+  const [showFoundationsCurriculum, setShowFoundationsCurriculum] = useState(false);
 
   const visibleLevels = COURSE_LEVELS.filter((level) => matchesFilter(level, filter));
 
@@ -78,46 +80,73 @@ export default function Courseware() {
         </div>
 
         <div className="courseware__grid">
-          {visibleLevels.map((level) => (
-            <div className="course-tile" key={level.level}>
-              <div className="course-tile__image" aria-hidden="true">
-                ♪
-              </div>
-              <div className="course-tile__body">
-                <div className="course-tile__row-top">
-                  <span className="course-tile__chip">Level {level.level}</span>
-                  <span className="course-tile__number">#{level.level}</span>
+          {visibleLevels.map((level) => {
+            const isFoundations = level.level === 0;
+            const openDetails = () =>
+              isFoundations ? setShowFoundationsCurriculum(true) : setSelectedLevel(level);
+
+            return (
+              <div
+                className={'course-tile' + (isFoundations ? ' course-tile--clickable' : '')}
+                key={level.level}
+                onClick={isFoundations ? openDetails : undefined}
+                role={isFoundations ? 'button' : undefined}
+                tabIndex={isFoundations ? 0 : undefined}
+                onKeyDown={
+                  isFoundations
+                    ? (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') openDetails();
+                      }
+                    : undefined
+                }
+              >
+                <div className="course-tile__image" aria-hidden="true">
+                  <img src="/assets/images/logo2.png" alt="" className="course-tile__icon" />
                 </div>
+                <div className="course-tile__body">
+                  <div className="course-tile__row-top">
+                    <span className="course-tile__chip">Level {level.level}</span>
+                    <span className="course-tile__number">#{level.level}</span>
+                  </div>
 
-                <dl className="course-tile__facts">
-                  <div>
-                    <dt>Level Name</dt>
-                    <dd>{level.name}</dd>
-                  </div>
-                  <div>
-                    <dt>Category</dt>
-                    <dd>{level.category}</dd>
-                  </div>
-                  <div>
-                    <dt>Target Age</dt>
-                    <dd>{level.age}</dd>
-                  </div>
-                  <div>
-                    <dt>Duration</dt>
-                    <dd>{level.duration}</dd>
-                  </div>
-                </dl>
+                  <dl className="course-tile__facts">
+                    <div>
+                      <dt>Level Name</dt>
+                      <dd>{level.name}</dd>
+                    </div>
+                    <div>
+                      <dt>Category</dt>
+                      <dd>{level.category}</dd>
+                    </div>
+                    <div>
+                      <dt>Target Age</dt>
+                      <dd>{level.age}</dd>
+                    </div>
+                    <div>
+                      <dt>Duration</dt>
+                      <dd>{level.duration}</dd>
+                    </div>
+                  </dl>
 
-                <button type="button" className="course-tile__link" onClick={() => setSelectedLevel(level)}>
-                  View details →
-                </button>
+                  <button
+                    type="button"
+                    className="course-tile__link"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      openDetails();
+                    }}
+                  >
+                    View details →
+                  </button>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 
       <CourseModal level={selectedLevel} onClose={() => setSelectedLevel(null)} />
+      <CurriculumModal open={showFoundationsCurriculum} onClose={() => setShowFoundationsCurriculum(false)} />
     </section>
   );
 }

@@ -160,6 +160,10 @@
   box-shadow: 0 10px 22px rgba(62, 31, 102, 0.18);
 }
 
+.course-tile--clickable {
+  cursor: pointer;
+}
+
 .course-tile__image {
   height: 96px;
   background: var(--color-purple);
@@ -167,8 +171,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-gold);
-  font-size: 28px;
+}
+
+.course-tile__icon {
+  height: 28px;
+  width: auto;
 }
 
 .course-tile__body {
