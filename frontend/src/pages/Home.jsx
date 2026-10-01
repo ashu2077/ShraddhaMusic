@@ -36,7 +36,6 @@ export default function Home() {
 
       <section className="hero page-section">
         <div className="container hero__inner">
-          <p className="hero__eyebrow">Online Piano Lessons for Ages 4–10</p>
           <h1 className="hero__title">Piano lessons your child will actually look forward to.</h1>
           <p className="hero__subtext">
             Live, one-on-one online piano instruction designed for young beginners — building
