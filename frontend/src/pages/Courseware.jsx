@@ -22,7 +22,7 @@ export default function Courseware() {
         <div className="courseware__intro">
           <div>
             <p className="courseware__caption">Curriculum</p>
-            <h1 className="courseware__heading">Little Keys Piano Curriculum</h1>
+            <h1 className="courseware__heading">Piano Foundations Curriculum</h1>
             <p className="courseware__sub">Levels Overview &amp; Breakdown</p>
           </div>
 
@@ -43,8 +43,8 @@ export default function Courseware() {
         <div className="courseware__summary">
           <h2>Executive Summary &amp; Level Matrix</h2>
           <p>
-            A comprehensive comparison of all course levels across age, proficiency category,
-            duration, core focus, and advancement milestones.
+            A comprehensive comparison of all course levels across proficiency category, duration,
+            core focus, and advancement milestones.
           </p>
         </div>
 
@@ -55,7 +55,6 @@ export default function Courseware() {
                 <th>Level</th>
                 <th>Level Name</th>
                 <th>Category</th>
-                <th>Target Age</th>
                 <th>Duration</th>
                 <th>Core Focus</th>
                 <th>Milestone / Advancement Criteria</th>
@@ -69,7 +68,6 @@ export default function Courseware() {
                   </td>
                   <td className="courseware__level-name">{level.name}</td>
                   <td>{level.category}</td>
-                  <td>{level.age}</td>
                   <td>{level.duration}</td>
                   <td>{level.coreFocus}</td>
                   <td>{level.milestone}</td>
@@ -117,10 +115,6 @@ export default function Courseware() {
                     <div>
                       <dt>Category</dt>
                       <dd>{level.category}</dd>
-                    </div>
-                    <div>
-                      <dt>Target Age</dt>
-                      <dd>{level.age}</dd>
                     </div>
                     <div>
                       <dt>Duration</dt>

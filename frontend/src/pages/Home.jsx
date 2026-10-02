@@ -36,23 +36,26 @@ export default function Home() {
 
       <section className="hero page-section">
         <div className="container hero__inner">
-          <h1 className="hero__title">Piano lessons your child will actually look forward to.</h1>
+          <h1 className="hero__title">Piano lessons for new musicians — taught virtually, one-on-one</h1>
           <p className="hero__subtext">
-            Live, one-on-one online piano instruction designed for young beginners — building
-            sight-reading, coordination and rhythm through a curriculum built around how kids
-            actually learn.
+            Here's the truth: learning piano should be fun first, skills second. At Shraddha's
+            Music Academy, we've cracked the code. Students aren't trudging through boring
+            drills—they're playing their way to real mastery: nailing notation, coordinating both
+            hands flawlessly, unlocking rhythm and expression, and discovering what it feels like
+            to actually play music. Every curriculum is custom-built around how you learn
+            best—because no two musicians are alike. Games that make you think, listening
+            exercises that blow your mind, and victories (big and small) that stack up into
+            genuine confidence. That's the magic. That's how real musicians are born. One session.
+            One breakthrough. One passion-fueled moment at a time.
           </p>
           <p className="hero__note">
             For new students only schedule a 30 minutes free assessment session. Click How it
             works and follow instructions
           </p>
           <div className="hero__ctas">
-            <Link to="/courseware" className="btn btn-primary">
-              View courses
-            </Link>
-            <Link to="/how-it-works" className="btn btn-secondary">
-              How it works
-            </Link>
+            <a href="#" className="btn btn-gold">
+              Book a free trial
+            </a>
           </div>
         </div>
       </section>

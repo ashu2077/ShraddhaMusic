@@ -4,7 +4,6 @@ import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import HowItWorks from './pages/HowItWorks.jsx';
 import Courseware from './pages/Courseware.jsx';
-import PianoRecommendation from './pages/PianoRecommendation.jsx';
 import Contact from './pages/Contact.jsx';
 
 export default function App() {
@@ -15,7 +14,6 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/how-it-works" element={<HowItWorks />} />
         <Route path="/courseware" element={<Courseware />} />
-        <Route path="/piano-recommendation" element={<PianoRecommendation />} />
         <Route path="/contact" element={<Contact />} />
       </Route>
     </Routes>

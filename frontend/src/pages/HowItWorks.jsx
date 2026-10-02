@@ -14,7 +14,7 @@ const STEPS = [
     text: 'You will receive a completed assessment via email within 24–48 hrs after the session, including instructions on how to get started.',
   },
   {
-    title: 'Register for recommended classes',
+    title: 'Register for your classes on the My Music Staff app',
     text: 'To get started, select the right class and set up sessions using the scheduling feature of the app. Payment must be completed to hold the reservation.',
   },
   {
