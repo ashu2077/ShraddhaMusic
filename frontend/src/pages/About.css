@@ -47,6 +47,11 @@
   font-size: 15px;
   line-height: 1.7;
   color: var(--color-text-secondary);
+  margin-bottom: 16px;
+}
+
+.about__philosophy:last-child {
+  margin-bottom: 0;
 }
 
 .about__list li {
