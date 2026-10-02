@@ -18,8 +18,7 @@
 }
 
 .site-header__logo {
-  height: 100%;
-  width: auto;
+  max-height: 100%;
 }
 
 .site-header__nav ul {
