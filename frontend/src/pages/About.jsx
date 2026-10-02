@@ -12,7 +12,7 @@ export default function About() {
         </div>
 
         <div className="about__content-col">
-          <h2 className="about__heading">Teaching philosophy</h2>
+          <h2 className="about__heading">About Me</h2>
           <p className="about__philosophy">
             Hi, I'm Shraddha! 👋 Welcome to Shraddha's Music Academy, nestled here in the Bay Area,
             California.
@@ -39,13 +39,6 @@ export default function About() {
             unbridled joy, and burning passion that music has given me. 🎹
           </p>
           <p className="about__philosophy">Can't wait to begin this journey with you!</p>
-
-          <h2 className="about__heading">Know the musician</h2>
-          <ul className="about__list">
-            <li>Bio detail pending from client.</li>
-            <li>Bio detail pending from client.</li>
-            <li>Bio detail pending from client.</li>
-          </ul>
         </div>
       </div>
     </section>

@@ -54,26 +54,6 @@
   margin-bottom: 0;
 }
 
-.about__list li {
-  position: relative;
-  padding-left: 18px;
-  font-size: 15px;
-  line-height: 1.6;
-  color: var(--color-text-secondary);
-  margin-bottom: 8px;
-}
-
-.about__list li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 9px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--color-gold);
-}
-
 @media (max-width: 720px) {
   .about__grid {
     grid-template-columns: 1fr;
