@@ -1,0 +1,133 @@
+.course-modal__backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(30, 15, 51, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 300;
+}
+
+.course-modal {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: var(--radius-modal);
+  box-shadow: 0 20px 60px rgba(30, 15, 51, 0.35);
+}
+
+.course-modal__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--color-purple);
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.course-modal__hero {
+  height: 160px;
+  border-radius: var(--radius-modal) var(--radius-modal) 0 0;
+  background: var(--color-purple);
+  border-bottom: 3px solid var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold);
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.course-modal__body {
+  padding: 24px 28px 28px;
+}
+
+.course-modal__chip {
+  display: inline-block;
+  background: var(--color-lavender-100);
+  color: var(--color-purple);
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 10px;
+}
+
+.course-modal__title {
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--color-purple);
+  margin-bottom: 14px;
+}
+
+.course-modal__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.course-modal__meta-chip {
+  background: var(--color-lavender-200);
+  border: 1px solid var(--color-border-lavender);
+  color: var(--color-text-secondary);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+}
+
+.course-modal__overview {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin-bottom: 18px;
+}
+
+.course-modal__subheading {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--color-purple);
+  margin-bottom: 10px;
+}
+
+.course-modal__list {
+  margin-bottom: 24px;
+}
+
+.course-modal__list li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin-bottom: 6px;
+}
+
+.course-modal__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-gold);
+}
+
+.course-modal__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}

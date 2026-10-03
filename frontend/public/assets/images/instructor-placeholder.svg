@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#efe9f6" />
+  <circle cx="200" cy="160" r="76" fill="#c9b8e0" />
+  <path d="M60 380c0-90 63-150 140-150s140 60 140 150z" fill="#c9b8e0" />
+  <text x="200" y="370" font-family="Montserrat, sans-serif" font-size="14" fill="#8a6a1e" text-anchor="middle">Photo pending</text>
+</svg>
