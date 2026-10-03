@@ -28,29 +28,28 @@ ShraddhaMusic/
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 16+
-- Python 3.8+
+- Node.js 18+
 - Git
 
-### Installation
+### Running the marketing site
 ```bash
-# Clone the repository
 git clone https://github.com/ashu2077/ShraddhaMusic.git
-cd ShraddhaMusic
+cd ShraddhaMusic/frontend
 
-# Install dependencies
 npm install
-pip install -r requirements.txt
+npm run dev       # local dev server
+npm run build     # production build to frontend/dist
 ```
 
+The site is a static five-page marketing site (Home, About, How It Works, Courseware, Contact) — there's no login, booking, or payment here; scheduling and payment happen in a separate app. See `DESIGN_SYSTEM.md` for the approved brand tokens.
+
 ## 💻 Tech Stack
-- **Frontend**: React, TailwindCSS
-- **Backend**: Node.js/Express
-- **Database**: MongoDB
+- **Frontend**: React + Vite, React Router, plain CSS with design tokens
+- **Backend**: Not built yet — reserved for future use beyond the marketing site
 - **Hosting**: To be configured
 
 ## 🎨 Design Theme
-All marketing materials, website, and online presence follow a **piano and keyboard-inspired design theme** with elegant, musical aesthetics.
+The site follows the approved **purple & gold** brand (Montserrat type, pill buttons) from the client's design handoff — see `DESIGN_SYSTEM.md`. A few items are still open with the client: the official name ("Shraddha's Music Academy" vs. "Shraddha Music Studio"), the free assessment session length (20 vs. 30 minutes), and some placeholder content/images noted inline in the code.
 
 ## 📞 Contact
 - **Email**: info@shraddhamusic.com

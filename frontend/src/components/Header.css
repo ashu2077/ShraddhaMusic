@@ -1,0 +1,129 @@
+.site-header {
+  background: var(--color-purple);
+  position: relative;
+  z-index: 100;
+}
+
+.site-header__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: clamp(96px, 12vw, 128px);
+}
+
+.site-header__logo-link {
+  display: flex;
+  align-items: center;
+  height: 85%;
+}
+
+.site-header__logo {
+  max-height: 100%;
+}
+
+.site-header__nav ul {
+  display: flex;
+  gap: 22px;
+}
+
+.site-header__nav-link {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-on-purple-text);
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.site-header__nav-link:hover {
+  color: #fff;
+}
+
+.site-header__nav-link.is-active {
+  color: #fff;
+  border-bottom-color: var(--color-gold);
+}
+
+.site-header__menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.site-header__menu-btn span {
+  display: block;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.site-drawer {
+  position: fixed;
+  inset: 0;
+  background: var(--color-purple);
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  transform: translateX(100%);
+  transition: transform 0.25s ease;
+}
+
+.site-drawer.is-open {
+  transform: translateX(0);
+}
+
+.site-drawer__close {
+  align-self: flex-end;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+.site-drawer nav {
+  margin-top: 32px;
+}
+
+.site-drawer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.site-drawer__link {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-on-purple-text);
+  padding: 14px 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.site-drawer__link.is-active {
+  color: #fff;
+}
+
+@media (max-width: 1080px) {
+  .site-header__nav {
+    display: none;
+  }
+
+  .site-header__menu-btn {
+    display: flex;
+  }
+}
