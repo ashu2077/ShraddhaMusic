@@ -2,8 +2,17 @@ import './HowItWorks.css';
 
 const STEPS = [
   {
-    title: 'Download the app and create a profile',
-    text: '',
+    title: 'Download the app and create a student profile',
+    text: (
+      <>
+        Visit{' '}
+        <a href="https://www.mymusicstaff.com/" target="_blank" rel="noopener noreferrer" className="how__link">
+          mymusicstaff.com
+        </a>{' '}
+        to download the app and create a student profile. This sets up your account so you can
+        schedule sessions, track progress, and manage payments all in one place.
+      </>
+    ),
   },
   {
     title: 'Sign up for 30 minutes free student assessment session',

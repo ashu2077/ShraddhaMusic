@@ -53,6 +53,16 @@
   color: var(--color-text-secondary-alt);
 }
 
+.how__link {
+  color: var(--color-purple);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.how__link:hover {
+  color: var(--color-gold-text);
+}
+
 .need {
   background: #fff;
 }
