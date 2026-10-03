@@ -11,7 +11,7 @@ export const COURSE_LEVELS = [
     name: 'Foundations',
     category: 'Early Beginner',
     age: 'Ages 4–6 (or absolute beginners)',
-    duration: '6–8 weeks (45 min/week)',
+    duration: '8-10 classes',
     coreFocus: 'Content pending from client',
     milestone: 'Content pending from client',
     overview:
@@ -27,7 +27,7 @@ export const COURSE_LEVELS = [
     name: 'Beginning Reading',
     category: 'Beginner',
     age: 'Ages 5–7',
-    duration: '6–8 weeks (45 min/week)',
+    duration: '8-10 classes',
     coreFocus: 'Content pending from client',
     milestone: 'Content pending from client',
     overview:
@@ -43,7 +43,7 @@ export const COURSE_LEVELS = [
     name: 'Expanding Hand Position & Reading',
     category: 'Late Beginner / Early Intermediate',
     age: 'Ages 6–8',
-    duration: '6–8 weeks (45 min/week)',
+    duration: '8-10 classes',
     coreFocus: 'Content pending from client',
     milestone: 'Content pending from client',
     overview:
@@ -59,7 +59,7 @@ export const COURSE_LEVELS = [
     name: 'Building Independence',
     category: 'Intermediate',
     age: 'Ages 8–10',
-    duration: '6–8 weeks (45 min/week)',
+    duration: '8-10 classes',
     coreFocus: 'Content pending from client',
     milestone: 'Content pending from client',
     overview:
