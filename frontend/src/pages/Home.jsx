@@ -53,9 +53,9 @@ export default function Home() {
             works and follow instructions
           </p>
           <div className="hero__ctas">
-            <a href="#" className="btn btn-gold">
+            <Link to="/how-it-works" className="btn btn-gold">
               Book a free trial
-            </a>
+            </Link>
           </div>
         </div>
       </section>
