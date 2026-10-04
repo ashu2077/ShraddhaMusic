@@ -2,17 +2,16 @@ import './HowItWorks.css';
 
 const STEPS = [
   {
-    title: 'Download the app and create a student profile',
-    text: (
+    title: (
       <>
-        Visit{' '}
+        Visit the{' '}
         <a href="https://www.mymusicstaff.com/" target="_blank" rel="noopener noreferrer" className="how__link">
-          mymusicstaff.com
+          www.mymusicstaff.com
         </a>{' '}
-        to download the app and create a student profile. This sets up your account so you can
-        schedule sessions, track progress, and manage payments all in one place.
+        website and create a student profile
       </>
     ),
+    text: 'Creating a student profile sets up your account so you can schedule sessions, track progress, and manage payments all in one place.',
   },
   {
     title: 'Sign up for 30 minutes free student assessment session',
@@ -54,7 +53,7 @@ export default function HowItWorks() {
         <div className="container">
           <ol className="how__timeline">
             {STEPS.map((step, i) => (
-              <li className="how__step" key={step.title}>
+              <li className="how__step" key={i}>
                 <div className="how__marker-col">
                   <span className="how__marker">{i + 1}</span>
                   {i < STEPS.length - 1 && <span className="how__connector" />}
