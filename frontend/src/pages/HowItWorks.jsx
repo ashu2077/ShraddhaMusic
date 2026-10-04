@@ -2,32 +2,36 @@ import './HowItWorks.css';
 
 const STEPS = [
   {
-    title: (
-      <>
-        Visit the{' '}
-        <a href="https://www.mymusicstaff.com/" target="_blank" rel="noopener noreferrer" className="how__link">
-          www.mymusicstaff.com
-        </a>{' '}
-        website and create a student profile
-      </>
-    ),
-    text: 'Creating a student profile sets up your account so you can schedule sessions, track progress, and manage payments all in one place.',
+    title: 'Fill out form with student information',
+    text: '',
   },
   {
-    title: 'Sign up for 30 minutes free student assessment session',
-    text: 'Using the scheduling feature on the app schedule a 30 minutes slot.',
+    title: 'Receive an email with link to join student portal on MyMusicStaff website',
+    text: '',
   },
   {
-    title: 'Complete the assessment as scheduled',
-    text: 'You will receive a completed assessment via email within 24–48 hrs after the session, including instructions on how to get started.',
+    title: 'Complete creating student profile.',
+    text: '',
   },
   {
-    title: 'Register for your classes on the My Music Staff app',
-    text: 'To get started, select the right class and set up sessions using the scheduling feature of the app. Payment must be completed to hold the reservation.',
+    title: 'Using the student portal on the website schedule a free assessment session.',
+    text: 'Find available spot using the calendar feature.',
   },
   {
-    title: 'Attend the sessions as registered',
-    text: 'Any scheduling change must be made using the app.',
+    title: 'Student and Shraddha will complete the assessment on the scheduled date',
+    text: '',
+  },
+  {
+    title: 'Receive a personalized class plan and start scheduling the sessions using the calendar to find available slots.',
+    text: '',
+  },
+  {
+    title: 'Make the payment for the classes',
+    text: '',
+  },
+  {
+    title: 'Start 1:1 sessions',
+    text: '',
   },
 ];
 
@@ -65,6 +69,10 @@ export default function HowItWorks() {
               </li>
             ))}
           </ol>
+
+          <p className="how__note-warning">
+            Note - Minor aged student should register using parent email id.
+          </p>
         </div>
       </section>
 

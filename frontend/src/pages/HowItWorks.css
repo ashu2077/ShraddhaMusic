@@ -53,14 +53,11 @@
   color: var(--color-text-secondary-alt);
 }
 
-.how__link {
-  color: var(--color-purple);
+.how__note-warning {
+  margin-top: 8px;
   font-weight: 700;
-  text-decoration: underline;
-}
-
-.how__link:hover {
-  color: var(--color-gold-text);
+  font-size: 13px;
+  color: #b3261e;
 }
 
 .need {
