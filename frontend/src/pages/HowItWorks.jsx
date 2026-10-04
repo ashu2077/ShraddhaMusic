@@ -3,11 +3,12 @@ import './HowItWorks.css';
 const STEPS = [
   {
     title: 'Fill out form with student information',
-    text: '',
+    text: 'Note - Minor aged student should register using parent email id.',
+    warning: true,
   },
   {
     title: 'Receive an email with link to join student portal on MyMusicStaff website',
-    text: '',
+    text: 'Next business day the academy will send you an email with link to complete the student portal registration.',
   },
   {
     title: 'Complete creating student profile.',
@@ -64,15 +65,13 @@ export default function HowItWorks() {
                 </div>
                 <div className="how__content">
                   <h3 className="how__title">{step.title}</h3>
-                  {step.text && <p className="how__text">{step.text}</p>}
+                  {step.text && (
+                    <p className={step.warning ? 'how__note-warning' : 'how__text'}>{step.text}</p>
+                  )}
                 </div>
               </li>
             ))}
           </ol>
-
-          <p className="how__note-warning">
-            Note - Minor aged student should register using parent email id.
-          </p>
         </div>
       </section>
 
