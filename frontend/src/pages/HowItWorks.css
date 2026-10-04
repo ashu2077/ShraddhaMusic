@@ -54,9 +54,9 @@
 }
 
 .how__note-warning {
-  margin-top: 8px;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 12px;
+  line-height: 1.4;
   color: #b3261e;
 }
 
