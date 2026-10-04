@@ -24,11 +24,12 @@ const STEPS = [
   },
   {
     title: 'Receive a personalized class plan and start scheduling the sessions using the calendar to find available slots.',
-    text: '',
+    text: 'Note - Do not schedule classes until you receive PERSONALIZED CLASS PLAN',
+    warning: true,
   },
   {
     title: 'Make the payment for the classes',
-    text: '',
+    text: 'Payment will be done on the website.',
   },
   {
     title: 'Start 1:1 sessions',
