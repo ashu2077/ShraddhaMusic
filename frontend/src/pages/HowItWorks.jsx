@@ -23,7 +23,7 @@ const STEPS = [
     text: '',
   },
   {
-    title: 'Receive a personalized class plan and start scheduling the sessions using the calendar to find available slots.',
+    title: 'Receive a personalized class plan by email then start scheduling the sessions using the calendar to find available slots.',
     text: 'Note - Do not schedule classes until you receive PERSONALIZED CLASS PLAN',
     warning: true,
   },
