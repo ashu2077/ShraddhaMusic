@@ -6,7 +6,7 @@ export default function About() {
       <div className="container about__grid">
         <div className="about__photo-col">
           <div className="about__photo-wrap">
-            <img src="/assets/images/instructor-placeholder.svg" alt="Instructor portrait" className="about__photo" />
+            <img src="/assets/images/instructor-photo.png" alt="Shraddha, founder and instructor" className="about__photo" />
             <span className="about__chip">piano</span>
           </div>
         </div>
