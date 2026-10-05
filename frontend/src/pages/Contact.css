@@ -80,3 +80,10 @@
 .contact__success p {
   color: var(--color-text-secondary);
 }
+
+.contact__email-note {
+  margin-top: 48px;
+  font-size: 21px;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+}
