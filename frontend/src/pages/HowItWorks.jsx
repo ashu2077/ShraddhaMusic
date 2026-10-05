@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './HowItWorks.css';
 
 const STEPS = [
@@ -5,6 +6,7 @@ const STEPS = [
     title: 'Fill out form with student information',
     text: 'Note - Minor aged student should register using parent email id.',
     warning: true,
+    cta: { label: 'Start Pre-registration Form', to: '/pre-registration' },
   },
   {
     title: 'Receive an email with link to join student portal on MyMusicStaff website',
@@ -68,6 +70,11 @@ export default function HowItWorks() {
                   <h3 className="how__title">{step.title}</h3>
                   {step.text && (
                     <p className={step.warning ? 'how__note-warning' : 'how__text'}>{step.text}</p>
+                  )}
+                  {step.cta && (
+                    <Link to={step.cta.to} className="btn btn-gold how__cta">
+                      {step.cta.label}
+                    </Link>
                   )}
                 </div>
               </li>
