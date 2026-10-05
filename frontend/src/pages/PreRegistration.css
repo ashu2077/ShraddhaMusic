@@ -1,0 +1,161 @@
+.prereg__inner {
+  max-width: 640px;
+}
+
+.prereg__heading {
+  font-weight: 800;
+  font-size: clamp(26px, 4vw, 36px);
+  color: var(--color-purple);
+  margin-bottom: 12px;
+}
+
+.prereg__intro {
+  color: var(--color-text-secondary);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.prereg__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.prereg__section-heading {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-purple);
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border-lavender);
+  width: 100%;
+}
+
+.prereg__form > .prereg__section-heading:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.prereg__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--color-purple);
+}
+
+.prereg__field-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.prereg__field-row .prereg__field {
+  flex: 1;
+  min-width: 180px;
+}
+
+.prereg__field input,
+.prereg__field textarea,
+.prereg__field select {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-text-body);
+  border: 1.5px solid var(--color-border-lavender);
+  border-radius: 12px;
+  padding: 12px 14px;
+  resize: vertical;
+}
+
+.prereg__field input:focus,
+.prereg__field textarea:focus,
+.prereg__field select:focus {
+  border-color: var(--color-purple);
+}
+
+.prereg__readonly-input {
+  background: var(--color-lavender-200);
+  color: var(--color-text-secondary-alt);
+}
+
+.prereg__dob-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.prereg__dob-row input[type='text'] {
+  flex: 1;
+}
+
+.prereg__calendar-btn {
+  min-height: 44px;
+  min-width: 44px;
+  border-radius: 12px;
+  border: 1.5px solid var(--color-border-lavender);
+  background: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.prereg__calendar-btn:hover {
+  background: var(--color-lavender-100);
+}
+
+.prereg__hidden-date-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+  right: 0;
+}
+
+.prereg__error {
+  font-size: 13px;
+  font-weight: 600;
+  color: #b3261e;
+  margin: -4px 0 0;
+}
+
+.prereg-modal__backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(30, 15, 51, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 300;
+}
+
+.prereg-modal {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: var(--radius-modal);
+  box-shadow: 0 20px 60px rgba(30, 15, 51, 0.35);
+  padding: 28px;
+  text-align: center;
+}
+
+.prereg-modal__title {
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--color-purple);
+  margin-bottom: 12px;
+}
+
+.prereg-modal__text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin-bottom: 20px;
+}

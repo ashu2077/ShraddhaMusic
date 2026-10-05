@@ -60,6 +60,13 @@
   color: #b3261e;
 }
 
+.how__cta {
+  margin-top: 12px;
+  min-height: 40px;
+  padding: 0 20px;
+  font-size: 13px;
+}
+
 .need {
   background: #fff;
 }

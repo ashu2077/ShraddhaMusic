@@ -8,6 +8,7 @@ const NAV_ITEMS = [
   { label: 'About', to: '/about' },
   { label: 'How It Works', to: '/how-it-works' },
   { label: 'Course Offerings', to: '/courseware' },
+  { label: 'Pre-registration', to: '/pre-registration' },
   { label: 'Contact', to: '/contact' },
 ];
 
