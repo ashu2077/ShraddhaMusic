@@ -31,7 +31,7 @@ const STEPS = [
   },
   {
     title: 'Make the payment for the classes',
-    text: 'Payment will be done on the website.',
+    text: 'Payment can be made through the www.mymusicstaff.com website. It will require a valid login. If you dont have a login reach the academy through the Contact page',
   },
   {
     title: 'Start 1:1 sessions',
