@@ -118,6 +118,51 @@
   right: 0;
 }
 
+.prereg__slots-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1.5px solid var(--color-border-lavender);
+  border-radius: var(--radius-card);
+}
+
+.prereg__slots-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 460px;
+}
+
+.prereg__slots-table th,
+.prereg__slots-table td {
+  padding: 14px 16px;
+  text-align: center;
+}
+
+.prereg__slots-table thead th {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--color-purple);
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.prereg__slots-table tbody th {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-purple);
+  text-align: left;
+}
+
+.prereg__slots-table tbody tr:nth-child(odd) {
+  background: var(--color-lavender-200);
+}
+
+.prereg__slots-table input[type='radio'] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-purple);
+  cursor: pointer;
+}
+
 .prereg__error {
   font-size: 13px;
   font-weight: 600;
