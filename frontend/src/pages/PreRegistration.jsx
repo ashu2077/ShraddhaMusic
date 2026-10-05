@@ -56,7 +56,6 @@ const INITIAL_FORM = {
   parentName: '',
   parentEmail: '',
   parentPhone: '',
-  mailingAddress: '',
   relationship: '',
 };
 
@@ -138,7 +137,6 @@ export default function PreRegistration() {
         parentFullName: form.parentName,
         parentEmail: form.parentEmail,
         parentPhone: form.parentPhone,
-        mailingAddress: form.mailingAddress,
         relationship: form.relationship,
       }),
     })
@@ -264,16 +262,6 @@ export default function PreRegistration() {
               placeholder="555-123-4567"
               value={form.parentPhone}
               onChange={(e) => update('parentPhone', maskPhone(e.target.value))}
-              required
-            />
-          </label>
-
-          <label className="prereg__field">
-            <span>Mailing address</span>
-            <textarea
-              rows={3}
-              value={form.mailingAddress}
-              onChange={(e) => update('mailingAddress', e.target.value)}
               required
             />
           </label>

@@ -115,6 +115,10 @@ export default function Contact() {
             {sending ? 'Sending…' : 'Send message'}
           </button>
         </form>
+
+        <p className="contact__email-note">
+          Academy can also be reached via email directly by info@shraddhasmusicacademy.com
+        </p>
       </div>
     </section>
   );
