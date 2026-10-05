@@ -1,7 +1,7 @@
 /**
  * Apps Script Web App for the "ShraddhaMusicPre-registration" Google Sheet.
  *
- * SETUP
+ * SETUP (first time)
  * 1. Create a Google Sheet named "ShraddhaMusicPre-registration".
  * 2. In the Sheet, go to Extensions > Apps Script.
  * 3. Delete any placeholder code and paste this entire file in.
@@ -14,7 +14,16 @@
  * 6. Send that URL back so it can be set as PRE_REGISTRATION_ENDPOINT_URL in
  *    frontend/src/config/preRegistration.js.
  *
+ * UPDATING (when this file changes, e.g. a new field was added)
+ * 1. Open the same Sheet > Extensions > Apps Script.
+ * 2. Replace all the code with this updated file and Save.
+ * 3. Deploy > Manage deployments > click the pencil on the active deployment >
+ *    Version: New version > Deploy. The Web app URL stays the same, so
+ *    nothing needs to change on the website side.
+ *
  * The first submission will auto-create a "Submissions" sheet tab with headers.
+ * Header row is re-synced on every submission, so a column added here appears
+ * automatically without touching existing data.
  */
 
 const SHEET_NAME = 'Submissions';
@@ -30,6 +39,7 @@ const HEADERS = [
   'Parent/Guardian Phone',
   'Mailing Address',
   'Relationship to Student',
+  'Assessment Availability',
 ];
 
 function getOrCreateSheet_() {
@@ -37,8 +47,8 @@ function getOrCreateSheet_() {
   let sheet = ss.getSheetByName(SHEET_NAME);
   if (!sheet) {
     sheet = ss.insertSheet(SHEET_NAME);
-    sheet.appendRow(HEADERS);
   }
+  sheet.getRange(1, 1, 1, HEADERS.length).setValues([HEADERS]);
   return sheet;
 }
 
@@ -77,6 +87,7 @@ function doPost(e) {
       data.parentPhone || '',
       data.mailingAddress || '',
       data.relationship || '',
+      data.assessmentAvailability || '',
     ]);
 
     return respond_({ ok: true });

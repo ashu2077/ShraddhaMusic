@@ -49,6 +49,14 @@ function calculateAge(dob) {
 
 const RELATIONSHIP_OPTIONS = ['Parent', 'Guardian', 'Other'];
 
+const ASSESSMENT_DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Sunday'];
+
+const ASSESSMENT_TIME_SLOTS = [
+  { key: 'morning', label: 'Mornings (9am-12pm)' },
+  { key: 'afternoon', label: 'Afternoons (12pm-3pm)' },
+  { key: 'evening', label: 'Evenings (3pm-6pm)' },
+];
+
 const INITIAL_FORM = {
   studentName: '',
   dob: '',
@@ -61,6 +69,7 @@ const INITIAL_FORM = {
 
 export default function PreRegistration() {
   const [form, setForm] = useState(INITIAL_FORM);
+  const [availability, setAvailability] = useState({});
   const [sending, setSending] = useState(false);
   const [sendError, setSendError] = useState('');
   const [submitted, setSubmitted] = useState(false);
@@ -74,6 +83,10 @@ export default function PreRegistration() {
 
   function update(field, value) {
     setForm((prev) => ({ ...prev, [field]: value }));
+  }
+
+  function selectAvailability(day, slotKey) {
+    setAvailability((prev) => ({ ...prev, [day]: slotKey }));
   }
 
   function openDatePicker() {
@@ -118,10 +131,19 @@ export default function PreRegistration() {
       setSendError('Please select the relationship to the student.');
       return;
     }
+    const selectedDays = ASSESSMENT_DAYS.filter((day) => availability[day]);
+    if (selectedDays.length === 0) {
+      setSendError('Please pick at least one day and time for your assessment.');
+      return;
+    }
     if (!PRE_REGISTRATION_ENDPOINT_URL) {
       setSendError('This form is not yet connected. Please contact the academy directly.');
       return;
     }
+
+    const assessmentAvailability = selectedDays
+      .map((day) => `${day}: ${ASSESSMENT_TIME_SLOTS.find((slot) => slot.key === availability[day]).label}`)
+      .join('; ');
 
     setSending(true);
 
@@ -138,6 +160,7 @@ export default function PreRegistration() {
         parentEmail: form.parentEmail,
         parentPhone: form.parentPhone,
         relationship: form.relationship,
+        assessmentAvailability,
       }),
     })
       .then((res) => res.json())
@@ -145,6 +168,7 @@ export default function PreRegistration() {
         if (data.ok) {
           setSubmitted(true);
           setForm(INITIAL_FORM);
+          setAvailability({});
         } else {
           setSendError(data.error || 'Something went wrong submitting the form. Please try again.');
         }
@@ -284,6 +308,42 @@ export default function PreRegistration() {
             </select>
           </label>
 
+          <h2 className="prereg__section-heading">Pick assessment slot(s)</h2>
+
+          <div className="prereg__slots-wrap">
+            <table className="prereg__slots-table">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  {ASSESSMENT_TIME_SLOTS.map((slot) => (
+                    <th scope="col" key={slot.key}>
+                      {slot.label}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {ASSESSMENT_DAYS.map((day) => (
+                  <tr key={day}>
+                    <th scope="row">{day}</th>
+                    {ASSESSMENT_TIME_SLOTS.map((slot) => (
+                      <td key={slot.key}>
+                        <input
+                          type="radio"
+                          name={`assessment-slot-${day}`}
+                          value={slot.key}
+                          checked={availability[day] === slot.key}
+                          onChange={() => selectAvailability(day, slot.key)}
+                          aria-label={`${day} ${slot.label}`}
+                        />
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
           {sendError && <p className="prereg__error">{sendError}</p>}
 
           <button type="submit" className="btn btn-gold" disabled={sending}>
@@ -305,7 +365,7 @@ export default function PreRegistration() {
               Thank you!
             </h2>
             <p className="prereg-modal__text">
-              Thank you for the information. The academy will send you an email with next steps.
+              Thank you for the information. The academy will confirm a slot via email in 2 business days.
             </p>
             <button type="button" className="btn btn-gold" onClick={() => setSubmitted(false)}>
               OK
