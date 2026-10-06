@@ -1,5 +1,5 @@
 // Post-build: emit a per-route HTML file (dist/about/index.html, ...) whose <head> carries
-// that page's title, description, canonical and social tags, This lets
+// that page's title, description, canonical and social tags. This lets
 // crawlers and link-preview bots that don't execute JavaScript see correct metadata.
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
