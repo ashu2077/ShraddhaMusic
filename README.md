@@ -1,9 +1,9 @@
-# 🎹 Shraddha Music School
+# 🎹 Shraddha Music Academy
 
-Welcome to the online platform for Shraddha Music School - where the art of piano and keyboard music comes alive!
+Welcome to the online platform for Shraddha Music Academy - where the art of piano and keyboard music comes alive!
 
 ## 📚 About
-Shraddha Music School is an innovative online music education platform specializing in piano and keyboard instruction. We provide comprehensive courses, personalized lessons, and resources for musicians of all levels.
+Shraddha Music Academy is an innovative online music education platform specializing in piano and keyboard instruction. We provide comprehensive courses, personalized lessons, and resources for musicians of all levels.
 
 ## 🎯 Mission
 To make quality music education accessible to everyone through interactive online learning experiences focused on piano and keyboard mastery.
@@ -52,8 +52,8 @@ The site is a static five-page marketing site (Home, About, How It Works, Course
 The site follows the approved **purple & gold** brand (Montserrat type, pill buttons) from the client's design handoff — see `DESIGN_SYSTEM.md`. A few items are still open with the client: the official name ("Shraddha's Music Academy" vs. "Shraddha Music Studio"), the free assessment session length (20 vs. 30 minutes), and some placeholder content/images noted inline in the code.
 
 ## 📞 Contact
-- **Email**: info@shraddhamusic.com
-- **Website**: To be launched
+- **Email**: info@shraddhamusicacademy.com
+- **Website**: Launched
 - **Owner**: Shraddha
 
 ## 📄 License
@@ -64,4 +64,4 @@ We welcome contributions! Please read our contributing guidelines before submitt
 
 ---
 
-**Made with 🎵 by the Shraddha Music School Team**
+**Made with 🎵 by the Shraddha Music Academy Team**
