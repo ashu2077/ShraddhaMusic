@@ -1,5 +1,5 @@
 // Post-build: emit a per-route HTML file (dist/about/index.html, ...) whose <head> carries
-// that page's title, description, canonical and social tags, plus sitemap.xml. This lets
+// that page's title, description, canonical and social tags, This lets
 // crawlers and link-preview bots that don't execute JavaScript see correct metadata.
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -39,13 +39,4 @@ for (const [path, page] of Object.entries(PAGES)) {
   }
 }
 
-const today = new Date().toISOString().slice(0, 10);
-const urls = Object.entries(PAGES)
-  .filter(([, p]) => !p.noindex)
-  .map(([path]) => `  <url><loc>${canonicalFor(path)}</loc><lastmod>${today}</lastmod></url>`)
-  .join('\n');
-writeFileSync(
-  join(dist, 'sitemap.xml'),
-  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`
-);
-console.log(`prerender-meta: wrote ${Object.keys(PAGES).length} pages + sitemap for ${SITE_URL}`);
+console.log(`prerender-meta: wrote ${Object.keys(PAGES).length} pages for ${SITE_URL}`);
