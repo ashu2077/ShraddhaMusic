@@ -6,13 +6,13 @@ export default function About() {
       <div className="container about__grid">
         <div className="about__photo-col">
           <div className="about__photo-wrap">
-            <img src="/assets/images/instructor-photo.png" alt="Shraddha, founder and instructor" className="about__photo" />
+            <img src="/assets/images/instructor-photo.png" alt="Shraddha, founder and piano instructor of Shraddha's Music Academy" className="about__photo" />
             <span className="about__chip">piano</span>
           </div>
         </div>
 
         <div className="about__content-col">
-          <h2 className="about__heading">About Me</h2>
+          <h1 className="about__heading">About Me</h1>
           <p className="about__philosophy">
             Hi, I'm Shraddha! 👋 Welcome to Shraddha's Music Academy, nestled here in the Bay Area,
             California.
