@@ -2,6 +2,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
+import Seo from './Seo.jsx';
 
 export default function Layout() {
   const location = useLocation();
@@ -12,6 +13,7 @@ export default function Layout() {
 
   return (
     <>
+      <Seo />
       <Header />
       <main>
         <Outlet />

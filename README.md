@@ -53,7 +53,7 @@ The site follows the approved **purple & gold** brand (Montserrat type, pill but
 
 ## 📞 Contact
 - **Email**: info@shraddhamusicacademy.com
-- **Website**: Launched
+- **Website**: https://www.shraddhasmusicacademy.com
 - **Owner**: Shraddha
 
 ## 📄 License

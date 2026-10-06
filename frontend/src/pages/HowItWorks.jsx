@@ -59,6 +59,7 @@ export default function HowItWorks() {
     <>
       <section className="how page-section">
         <div className="container">
+          <h1 className="sr-only">How online piano lessons work at Shraddha&rsquo;s Music Academy</h1>
           <ol className="how__timeline">
             {STEPS.map((step, i) => (
               <li className="how__step" key={i}>
@@ -67,7 +68,7 @@ export default function HowItWorks() {
                   {i < STEPS.length - 1 && <span className="how__connector" />}
                 </div>
                 <div className="how__content">
-                  <h3 className="how__title">{step.title}</h3>
+                  <h2 className="how__title">{step.title}</h2>
                   {step.text && (
                     <p className={step.warning ? 'how__note-warning' : 'how__text'}>{step.text}</p>
                   )}
