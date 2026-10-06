@@ -52,7 +52,7 @@ The site is a static five-page marketing site (Home, About, How It Works, Course
 The site follows the approved **purple & gold** brand (Montserrat type, pill buttons) from the client's design handoff — see `DESIGN_SYSTEM.md`. A few items are still open with the client: the official name ("Shraddha's Music Academy" vs. "Shraddha Music Studio"), the free assessment session length (20 vs. 30 minutes), and some placeholder content/images noted inline in the code.
 
 ## 📞 Contact
-- **Email**: info@shraddhamusicacademy.com
+- **Email**: info@shraddhasmusicacademy.com
 - **Website**: https://www.shraddhasmusicacademy.com
 - **Owner**: Shraddha
 
