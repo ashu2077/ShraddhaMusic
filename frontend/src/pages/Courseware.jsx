@@ -1,13 +1,11 @@
 import { useState } from 'react';
 import { COURSE_LEVELS, FILTERS, matchesFilter } from '../data/courseLevels.js';
 import CourseModal from '../components/CourseModal.jsx';
-import CurriculumModal from '../components/CurriculumModal.jsx';
 import './Courseware.css';
 
 export default function Courseware() {
   const [filter, setFilter] = useState('All');
   const [selectedLevel, setSelectedLevel] = useState(null);
-  const [showFoundationsCurriculum, setShowFoundationsCurriculum] = useState(false);
 
   const visibleLevels = COURSE_LEVELS.filter((level) => matchesFilter(level, filter));
 
@@ -79,24 +77,18 @@ export default function Courseware() {
 
         <div className="courseware__grid">
           {visibleLevels.map((level) => {
-            const isFoundations = level.level === 0;
-            const openDetails = () =>
-              isFoundations ? setShowFoundationsCurriculum(true) : setSelectedLevel(level);
+            const openDetails = () => setSelectedLevel(level);
 
             return (
               <div
-                className={'course-tile' + (isFoundations ? ' course-tile--clickable' : '')}
+                className="course-tile course-tile--clickable"
                 key={level.level}
-                onClick={isFoundations ? openDetails : undefined}
-                role={isFoundations ? 'button' : undefined}
-                tabIndex={isFoundations ? 0 : undefined}
-                onKeyDown={
-                  isFoundations
-                    ? (e) => {
-                        if (e.key === 'Enter' || e.key === ' ') openDetails();
-                      }
-                    : undefined
-                }
+                onClick={openDetails}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') openDetails();
+                }}
               >
                 <div className="course-tile__image" aria-hidden="true">
                   <img src="/assets/images/logo2.png" alt="" className="course-tile__icon" />
@@ -140,7 +132,6 @@ export default function Courseware() {
       </div>
 
       <CourseModal level={selectedLevel} onClose={() => setSelectedLevel(null)} />
-      <CurriculumModal open={showFoundationsCurriculum} onClose={() => setShowFoundationsCurriculum(false)} />
     </section>
   );
 }
