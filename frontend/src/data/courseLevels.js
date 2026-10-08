@@ -63,14 +63,17 @@ export const COURSE_LEVELS = [
     name: 'Building Independence',
     category: 'Intermediate',
     duration: '8-10 classes',
-    coreFocus: 'Content pending from client',
+    coreFocus: 'Musical independence, expanded technique, and music theory fundamentals',
     milestone: 'Content pending from client',
     overview:
-      'Develops independent hand coordination and self-directed practice habits, preparing students for more advanced repertoire.',
+      'More musical independence, expanded technique, and introduction to music theory fundamentals.',
     whatYoullLearn: [
-      'Independent rhythmic patterns between hands',
-      'Intermediate repertoire with varied dynamics',
-      'Self-directed practice and sight-reading strategies',
+      'Major and minor scales (1 octave, hands separately and together)',
+      'Basic chords: I, IV, V in C and G major; simple triads',
+      'Key signatures: introduce 1–2 sharps/flats (G major, F major)',
+      'Basic music theory: intervals, whole/half steps, simple chord function',
+      'More complex rhythms: dotted notes, simple compound time (6/8)',
+      'Phrasing and expression — shaping a musical line, not just "getting the notes right"',
     ],
   },
 ];
