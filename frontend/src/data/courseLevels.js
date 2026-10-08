@@ -29,15 +29,18 @@ export const COURSE_LEVELS = [
     level: 1,
     name: 'Beginning Reading',
     category: 'Beginner',
-    duration: '8-10 classes',
-    coreFocus: 'Content pending from client',
-    milestone: 'Content pending from client',
-    overview:
-      'Introduces staff notation and note reading in a fixed hand position, building toward confident single-hand playing.',
+    duration: '8-10 weeks',
+    coreFocus: 'Basic staff reading and five-finger hand positions',
+    milestone:
+      'Student reads and plays simple 5-finger melodies hands-together with correct rhythm, and can name lines/spaces on the treble staff.',
+    overview: 'Introduce basic staff reading and five-finger hand positions.',
     whatYoullLearn: [
-      'Reading notes on the staff in a five-finger position',
-      'Basic note values and simple time signatures',
-      'Short pieces played hands together',
+      'The grand staff: lines and spaces, with the usual mnemonics',
+      'Middle C position — both thumbs sharing middle C, right hand reaching up to G, left hand down to F',
+      'Quarter, half and whole notes and their rests',
+      'Dynamics: p and f',
+      'Hands separately, then simple parallel-motion pieces together',
+      '4/4 and 3/4 as counting exercises',
     ],
   },
   {
