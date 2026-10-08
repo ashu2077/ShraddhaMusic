@@ -10,15 +10,19 @@ export const COURSE_LEVELS = [
     level: 0,
     name: 'Foundations',
     category: 'Early Beginner',
-    duration: '8-10 classes',
-    coreFocus: 'Content pending from client',
-    milestone: 'Content pending from client',
-    overview:
-      'An introduction to the keyboard, note names, and steady rhythm through playful, hands-on activities suited to very young beginners.',
+    duration: '8-10 weeks',
+    coreFocus: 'Instrument comfort, rhythm, and listening skills',
+    milestone:
+      'Student can find any note in the C-D-E and F-G-A-B groups, keeps a steady beat, and can play a 3–5 note rote song with both hands separately.',
+    overview: 'Build comfort with the instrument, basic rhythm, and listening skills before reading music.',
     whatYoullLearn: [
-      'Keyboard geography and proper hand position',
-      'Steady beat and simple rhythm patterns',
-      'First short pieces played hands separately',
+      'Proper sitting posture, hand shape ("holding a ball"), finger numbers (1–5 both hands)',
+      'Keyboard geography: identifying groups of 2 black keys and 3 black keys',
+      "Finding all the C's, D's, F's using the black key groups",
+      'High/low, loud/soft (forte/piano as concepts, not terms yet)',
+      'Steady beat: clapping, tapping on knees, walking to a beat',
+      'Simple call-and-response echo games (teacher plays 3 notes, student repeats)',
+      'Introduce quarter notes and quarter rests as "walk" and "stop" (Kodály/Orff-style rhythm syllables work well: "ta" and "rest")',
     ],
   },
   {
