@@ -9,7 +9,7 @@ const STEPS = [
     cta: { label: 'Start Pre-registration Form', to: '/pre-registration' },
   },
   {
-    title: 'Receive an email with link to join student portal on MyMusicStaff website',
+    title: 'Receive an email with link to join the student portal',
     text: 'Next business day the academy will send you an email with link to complete the student portal registration.',
   },
   {
@@ -31,7 +31,7 @@ const STEPS = [
   },
   {
     title: 'Make the payment for the classes',
-    text: 'Payment can be made through the www.mymusicstaff.com website. It will require a valid login. If you dont have a login reach the academy through the Contact page',
+    text: 'Payment can be made through the student portal website. It will require a valid login. If you dont have a login reach the academy through the Contact page',
   },
   {
     title: 'Start 1:1 sessions',

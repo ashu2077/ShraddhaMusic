@@ -36,7 +36,11 @@ export default function Home() {
 
       <section className="hero page-section">
         <div className="container hero__inner">
-          <h1 className="hero__title">Piano lessons for new musicians — taught virtually, one-on-one</h1>
+          <h1 className="hero__title">
+            Piano lessons for new musicians — taught virtually, one-on-one
+            <br />
+            Open to all ages
+          </h1>
           <p className="hero__subtext">
             Here's the truth: learning piano should be fun first, skills second. At Shraddha's
             Music Academy, we've cracked the code. Students aren't trudging through boring
