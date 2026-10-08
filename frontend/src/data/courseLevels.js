@@ -1,6 +1,6 @@
 /**
  * Level matrix data per the handoff (Courseware / 3a). Level, Name, Category,
- * Age and Duration are the client-approved copy from the README's table.
+ * and Duration are the client-approved copy from the README's table.
  * Core Focus, Milestone, and the modal's overview/what-you'll-learn copy
  * weren't supplied (they live in the `info` array of the wireframes file,
  * which wasn't part of this upload) — placeholders are flagged below.
@@ -10,7 +10,6 @@ export const COURSE_LEVELS = [
     level: 0,
     name: 'Foundations',
     category: 'Early Beginner',
-    age: 'Ages 4–6 (or absolute beginners)',
     duration: '8-10 classes',
     coreFocus: 'Content pending from client',
     milestone: 'Content pending from client',
@@ -26,7 +25,6 @@ export const COURSE_LEVELS = [
     level: 1,
     name: 'Beginning Reading',
     category: 'Beginner',
-    age: 'Ages 5–7',
     duration: '8-10 classes',
     coreFocus: 'Content pending from client',
     milestone: 'Content pending from client',
@@ -42,7 +40,6 @@ export const COURSE_LEVELS = [
     level: 2,
     name: 'Expanding Hand Position & Reading',
     category: 'Late Beginner / Early Intermediate',
-    age: 'Ages 6–8',
     duration: '8-10 classes',
     coreFocus: 'Content pending from client',
     milestone: 'Content pending from client',
@@ -58,7 +55,6 @@ export const COURSE_LEVELS = [
     level: 3,
     name: 'Building Independence',
     category: 'Intermediate',
-    age: 'Ages 8–10',
     duration: '8-10 classes',
     coreFocus: 'Content pending from client',
     milestone: 'Content pending from client',

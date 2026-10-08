@@ -38,7 +38,6 @@ export default function CourseModal({ level, onClose }) {
 
           <div className="course-modal__meta">
             <span className="course-modal__meta-chip">{level.duration}</span>
-            <span className="course-modal__meta-chip">{level.age}</span>
             <span className="course-modal__meta-chip">45 min lessons</span>
           </div>
 
