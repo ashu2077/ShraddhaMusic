@@ -48,14 +48,19 @@ export const COURSE_LEVELS = [
     name: 'Expanding Hand Position & Reading',
     category: 'Late Beginner / Early Intermediate',
     duration: '8-10 classes',
-    coreFocus: 'Content pending from client',
-    milestone: 'Content pending from client',
-    overview:
-      'Moves beyond a fixed hand position, introducing wider intervals, position shifts, and more expressive two-handed playing.',
+    coreFocus: 'Move beyond fixed 5-finger position; introduce basic technique and musicality.',
+    milestone:
+      'Comfortable reading beyond 5-finger position, can play a simple scale hands separately, understands basic dynamics and articulation.',
+    overview: 'Move beyond fixed 5-finger position; introduce basic technique and musicality.',
     whatYoullLearn: [
-      'Reading beyond the five-finger position',
-      'Hand shifts and simple crossovers',
-      'Dynamics and phrasing in short pieces',
+      'Reading ledger lines around Middle C',
+      'Introducing simple hand position shifts (moving out of strict 5-finger position)',
+      'Basic two-note (interval) chords and simple I-V (tonic-dominant) accompaniment patterns',
+      'Eighth notes and simple syncopation',
+      'Legato vs. staccato touch',
+      'Sharps, flats, and the concept of the chromatic scale (informally)',
+      'Basic major scale (C major hands separately, then together)',
+      "Introducing simple pedaling (if the student's feet reach, or using a stool)",
     ],
   },
   {
