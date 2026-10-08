@@ -68,10 +68,10 @@ export const COURSE_LEVELS = [
     name: 'Building Independence',
     category: 'Intermediate',
     duration: '8-10 classes',
-    coreFocus: 'Musical independence, expanded technique, and music theory fundamentals',
-    milestone: 'Content pending from client',
-    overview:
-      'More musical independence, expanded technique, and introduction to music theory fundamentals.',
+    coreFocus: 'More musical independence, expanded technique, and introduction to music theory fundamentals.',
+    milestone:
+      'Students can read notation across the grand staff, play simple 1-octave scales and I-IV-V chords, understand key signatures at a beginner level, and can independently learn a short new piece with guidance only on trouble spots.',
+    overview: 'More musical independence, expanded technique, and introduction to music theory fundamentals.',
     whatYoullLearn: [
       'Major and minor scales (1 octave, hands separately and together)',
       'Basic chords: I, IV, V in C and G major; simple triads',
@@ -79,6 +79,7 @@ export const COURSE_LEVELS = [
       'Basic music theory: intervals, whole/half steps, simple chord function',
       'More complex rhythms: dotted notes, simple compound time (6/8)',
       'Phrasing and expression — shaping a musical line, not just "getting the notes right"',
+      'Sight-reading practice as a regular short weekly habit',
     ],
   },
 ];
