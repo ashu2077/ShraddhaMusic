@@ -35,6 +35,8 @@ export default function Contact() {
           from_name: name,
           from_email: email,
           reply_to: email,
+          to_email: 'Info@shraddhasmusicacademy.com',
+          cc_email: email,
           message,
         },
         { publicKey: EMAILJS_PUBLIC_KEY }
