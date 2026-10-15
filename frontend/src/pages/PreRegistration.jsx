@@ -185,7 +185,7 @@ export default function PreRegistration() {
   return (
     <section className="prereg page-section">
       <div className="container prereg__inner">
-        <h1 className="prereg__heading">New Student Pre-registration</h1>
+        <h1 className="prereg__heading">New Student Assessment Request</h1>
         <p className="prereg__intro">
           Share a few details about the student and primary contact so we can get the enrollment process
           started.

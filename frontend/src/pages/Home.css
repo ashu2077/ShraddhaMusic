@@ -28,6 +28,10 @@
   margin-bottom: 16px;
 }
 
+.hero__title-sub {
+  font-size: calc(1em - 4pt);
+}
+
 .hero__subtext {
   font-weight: 400;
   font-size: clamp(16px, 1.4vw, 18px);

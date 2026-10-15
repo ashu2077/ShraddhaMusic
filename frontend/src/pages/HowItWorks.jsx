@@ -3,39 +3,35 @@ import './HowItWorks.css';
 
 const STEPS = [
   {
-    title: 'Fill out form with student information',
-    text: 'Note - Minor aged student should register using parent email id.',
-    warning: true,
-    cta: { label: 'Start Pre-registration Form', to: '/pre-registration' },
+    title: 'Submit an assessment request',
+    text: "Complete the assessment request form with the student's information.",
+    note: "Note: Students under 18 should register using a parent or guardian's email address.",
+    cta: { label: 'Start Assessment Request Form', to: '/pre-registration' },
   },
   {
-    title: 'Receive an email with link to join the student portal',
-    text: 'Next business day the academy will send you an email with link to complete the student portal registration.',
+    title: 'Choose a time',
+    text: "Shraddha's Music Academy (SMA) will email you a list of available assessment time slots. Reply with your preferred time.",
   },
   {
-    title: 'Complete creating student profile.',
-    text: '',
+    title: 'Receive your meeting link',
+    text: "Once your time is confirmed, you'll receive a Microsoft Teams link for the assessment.",
   },
   {
-    title: 'Using the student portal on the website schedule a free assessment session.',
-    text: 'Find available spot using the calendar feature.',
+    title: 'Complete the assessment',
+    text: 'At the scheduled time, the student and SMA will meet online to complete the assessment.',
   },
   {
-    title: 'Student and Shraddha will complete the assessment on the scheduled date',
-    text: '',
+    title: 'Receive your personalized class plan',
+    text: "Following the assessment, you'll receive a personalized class plan by email. Once you have it, you can book your sessions by choosing from available slots on the calendar.",
+    note: 'Please note: Classes cannot be scheduled until you have received your personalized class plan.',
   },
   {
-    title: 'Receive a personalized class plan by email then start scheduling the sessions using the calendar to find available slots.',
-    text: 'Note - Do not schedule classes until you receive PERSONALIZED CLASS PLAN',
-    warning: true,
+    title: 'Begin your 1:1 sessions',
+    text: 'Start your lessons at your scheduled times.',
   },
   {
-    title: 'Make the payment for the classes',
-    text: 'Payment can be made through the student portal website. It will require a valid login. If you dont have a login reach the academy through the Contact page',
-  },
-  {
-    title: 'Start 1:1 sessions',
-    text: '',
+    title: 'Payment',
+    text: 'Payment is made after each class via Zelle. Zelle details will be shared once the student is enrolled in the course.',
   },
 ];
 
@@ -69,9 +65,8 @@ export default function HowItWorks() {
                 </div>
                 <div className="how__content">
                   <h2 className="how__title">{step.title}</h2>
-                  {step.text && (
-                    <p className={step.warning ? 'how__note-warning' : 'how__text'}>{step.text}</p>
-                  )}
+                  {step.text && <p className="how__text">{step.text}</p>}
+                  {step.note && <p className="how__note-warning">{step.note}</p>}
                   {step.cta && (
                     <Link to={step.cta.to} className="btn btn-gold how__cta">
                       {step.cta.label}

@@ -32,8 +32,8 @@ export const PAGES = {
       "Questions about online piano lessons, scheduling or the curriculum? Send Shraddha's Music Academy a message or email info@shraddhasmusicacademy.com.",
   },
   '/pre-registration': {
-    title: "New Student Pre-registration | Shraddha's Music Academy",
-    description: "Start here: pre-register a new student for Shraddha's Music Academy's free piano assessment session.",
+    title: "New Student Assessment Request | Shraddha's Music Academy",
+    description: "Start here: request an assessment session for a new student at Shraddha's Music Academy.",
     noindex: true,
   },
 };
