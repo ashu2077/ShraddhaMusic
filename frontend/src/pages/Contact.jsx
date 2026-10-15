@@ -1,6 +1,11 @@
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY } from '../config/emailjs.js';
+import {
+  EMAILJS_SERVICE_ID,
+  EMAILJS_AUTOREPLY_TEMPLATE_ID,
+  EMAILJS_NOTIFY_TEMPLATE_ID,
+  EMAILJS_PUBLIC_KEY,
+} from '../config/emailjs.js';
 import './Contact.css';
 
 const WORD_LIMIT = 1500;
@@ -30,16 +35,29 @@ export default function Contact() {
     emailjs
       .send(
         EMAILJS_SERVICE_ID,
-        EMAILJS_TEMPLATE_ID,
+        EMAILJS_NOTIFY_TEMPLATE_ID,
         {
           from_name: name,
           from_email: email,
           reply_to: email,
-          to_email: 'Info@shraddhasmusicacademy.com',
-          cc_email: email,
+          to_email: 'info@shraddhasmusicacademy.com',
           message,
         },
         { publicKey: EMAILJS_PUBLIC_KEY }
+      )
+      .then(() =>
+        emailjs.send(
+          EMAILJS_SERVICE_ID,
+          EMAILJS_AUTOREPLY_TEMPLATE_ID,
+          {
+            from_name: name,
+            from_email: email,
+            reply_to: email,
+            to_email: email,
+            message,
+          },
+          { publicKey: EMAILJS_PUBLIC_KEY }
+        )
       )
       .then(() => {
         setSubmitted(true);
