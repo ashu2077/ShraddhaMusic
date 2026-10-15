@@ -10,7 +10,7 @@ const STEPS = [
   },
   {
     title: 'Choose a time',
-    text: "Shraddha's Music Academy (SMA) will email you a list of available assessment time slots. Reply with your preferred time.",
+    text: 'Pick the time slots when registering for free assessment. The academy will confirm one of the your slots via email.',
   },
   {
     title: 'Receive your meeting link',

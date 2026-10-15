@@ -29,7 +29,7 @@
 }
 
 .hero__title-sub {
-  font-size: calc(1em - 4pt);
+  font-size: 50%;
 }
 
 .hero__subtext {
