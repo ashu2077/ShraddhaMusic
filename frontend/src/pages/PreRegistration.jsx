@@ -308,7 +308,7 @@ export default function PreRegistration() {
             </select>
           </label>
 
-          <h2 className="prereg__section-heading">Pick assessment slot(s)</h2>
+          <h2 className="prereg__section-heading">Pick assessment slot(s) - all times are PST time zone</h2>
 
           <div className="prereg__slots-wrap">
             <table className="prereg__slots-table">
