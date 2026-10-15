@@ -14,8 +14,12 @@ const SHARE_URL =
   'https://shraddhasmusicacademy-my.sharepoint.com/:x:/g/personal/ashutosh_admin_shraddhasmusicacademy_onmicrosoft_com/IQAqejLBTu3QQZTdQ9n9yHMEAa0fNpHJVZlEIIV2kBarUKg?e=cWCbkr';
 const TABLE_NAME = 'Table1';
 
-// Column order must match the Excel table's header row exactly.
-const EMAIL_COLUMN_INDEX = 7; // 0-based: Creation Date/Time(0) ... Parent/Guardian Email(7)
+// Column order must match the Excel table's header row exactly:
+// Creation Date/Time, Student Full Name, Student Date of Birth, Student Age,
+// Instrument(s) Learning, Lesson Goals/Preferences, Parent/Guardian Full Name,
+// Parent/Guardian Email, Parent/Guardian Phone, Mailing Address,
+// Relationship to Student, Assessment Availability
+const EMAIL_COLUMN_INDEX = 7;
 
 function encodeShareUrl(url) {
   const base64 = Buffer.from(url, 'utf-8').toString('base64');
@@ -125,6 +129,7 @@ export default async function handler(req, res) {
       data.parentFullName || '',
       email,
       data.parentPhone || '',
+      '', // Mailing Address — not collected by the form, column kept for sheet compatibility
       data.relationship || '',
       data.assessmentAvailability || '',
     ]);
