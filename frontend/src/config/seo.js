@@ -7,9 +7,9 @@ export const OG_IMAGE = `${SITE_URL}/og-image.png`;
 
 export const PAGES = {
   '/': {
-    title: "Online Piano Lessons for Kids | Shraddha's Music Academy",
+    title: "Online 1:1 Piano Lessons for New Musicians | Shraddha's Music Academy",
     description:
-      "Fun, personalized 1:1 online piano lessons for young beginners, taught live by Shraddha from the Bay Area, California. Book a free assessment session.",
+      "Fun, personalized 1:1 online piano lessons for new musicians, taught live by Shraddha from the Bay Area, California. Book a free assessment session.",
   },
   '/about': {
     title: "About Shraddha | Piano Teacher | Shraddha's Music Academy",
@@ -32,8 +32,8 @@ export const PAGES = {
       "Questions about online piano lessons, scheduling or the curriculum? Send Shraddha's Music Academy a message or email info@shraddhasmusicacademy.com.",
   },
   '/pre-registration': {
-    title: "New Student Pre-registration | Shraddha's Music Academy",
-    description: "Start here: pre-register a new student for Shraddha's Music Academy's free piano assessment session.",
+    title: "New Student Assessment Request | Shraddha's Music Academy",
+    description: "Start here: request an assessment session for a new student at Shraddha's Music Academy.",
     noindex: true,
   },
 };

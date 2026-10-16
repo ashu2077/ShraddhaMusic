@@ -39,7 +39,7 @@ export default function Home() {
           <h1 className="hero__title">
             Piano lessons for new musicians — taught virtually, one-on-one
             <br />
-            Open to all ages
+            <span className="hero__title-sub">Open to all ages</span>
           </h1>
           <p className="hero__subtext">
             Here's the truth: learning piano should be fun first, skills second. At Shraddha's

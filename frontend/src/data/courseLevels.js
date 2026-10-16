@@ -10,7 +10,7 @@ export const COURSE_LEVELS = [
     level: 0,
     name: 'Foundations',
     category: 'Early Beginner',
-    duration: '8-10 weeks',
+    duration: '8-10 classes',
     coreFocus: 'Instrument comfort, rhythm, and listening skills',
     milestone:
       'Student can find any note in the C-D-E and F-G-A-B groups, keeps a steady beat, and can play a 3–5 note rote song with both hands separately.',
@@ -29,7 +29,7 @@ export const COURSE_LEVELS = [
     level: 1,
     name: 'Beginning Reading',
     category: 'Beginner',
-    duration: '8-10 weeks',
+    duration: '8-10 classes',
     coreFocus: 'Basic staff reading and five-finger hand positions',
     milestone:
       'Student reads and plays simple 5-finger melodies hands-together with correct rhythm, and can name lines/spaces on the treble staff.',
