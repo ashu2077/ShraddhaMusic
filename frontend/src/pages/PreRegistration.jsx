@@ -310,6 +310,16 @@ export default function PreRegistration() {
 
           <h2 className="prereg__section-heading">Pick assessment slot(s) - all times are PST time zone</h2>
 
+          <div className="prereg__slots-header">
+            <button
+              type="button"
+              className="prereg__slots-reset"
+              onClick={() => setAvailability({})}
+            >
+              Clear selections
+            </button>
+          </div>
+
           <div className="prereg__slots-wrap">
             <table className="prereg__slots-table">
               <thead>

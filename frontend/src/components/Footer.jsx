@@ -7,7 +7,13 @@ export default function Footer() {
         <span className="site-footer__copy">© Shraddha's Music Academy</span>
 
         <div className="site-footer__socials">
-          <a href="#" aria-label="Instagram" className="site-footer__social-link">
+          <a
+            href="https://www.instagram.com/shraddhainstudio"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="site-footer__social-link"
+          >
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="1.6" />
               <circle cx="12" cy="12" r="4.2" stroke="currentColor" strokeWidth="1.6" />
