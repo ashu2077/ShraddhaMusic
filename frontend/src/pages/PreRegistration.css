@@ -118,6 +118,27 @@
   right: 0;
 }
 
+.prereg__slots-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+.prereg__slots-reset {
+  background: none;
+  border: 1.5px solid var(--color-border-lavender);
+  border-radius: var(--radius-card);
+  color: var(--color-purple);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 14px;
+}
+
+.prereg__slots-reset:hover {
+  background: var(--color-border-lavender);
+}
+
 .prereg__slots-wrap {
   width: 100%;
   overflow-x: auto;
