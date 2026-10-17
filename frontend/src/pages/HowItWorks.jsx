@@ -22,7 +22,7 @@ const STEPS = [
   },
   {
     title: 'Receive your personalized class plan',
-    text: "Following the assessment, you'll receive a personalized class plan by email. Once you have it, you can book your sessions by choosing from available slots on the calendar.",
+    text: "Following the assessment, you'll receive a personalized class plan by email. Once you have it, you can book your sessions by choosing from available slots on the email.",
     note: 'Please note: Classes cannot be scheduled until you have received your personalized class plan.',
   },
   {
