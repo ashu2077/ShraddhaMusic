@@ -28,7 +28,13 @@ export default function Footer() {
               />
             </svg>
           </a>
-          <a href="#" aria-label="YouTube" className="site-footer__social-link">
+          <a
+            href="https://youtube.com/@shraddhainstudio"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+            className="site-footer__social-link"
+          >
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <rect x="2.5" y="6" width="19" height="12" rx="3.5" stroke="currentColor" strokeWidth="1.6" />
               <path d="M10.5 9.5L15 12L10.5 14.5V9.5Z" fill="currentColor" />
