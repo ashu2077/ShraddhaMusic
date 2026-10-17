@@ -26,12 +26,12 @@ const STEPS = [
     note: 'Please note: Classes cannot be scheduled until you have received your personalized class plan.',
   },
   {
-    title: 'Begin your 1:1 sessions',
-    text: 'Start your lessons at your scheduled times.',
+    title: 'Payment',
+    text: 'Payment is made via zelle and information is sent on the class plan email the student/parent received after free assessment. Payment is due before start of classes.',
   },
   {
-    title: 'Payment',
-    text: 'Payment is made after each class via Zelle. Zelle details will be shared once the student is enrolled in the course.',
+    title: 'Begin your 1:1 sessions',
+    text: 'Start your lessons at your scheduled times.',
   },
 ];
 
