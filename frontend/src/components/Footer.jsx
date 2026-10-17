@@ -20,14 +20,6 @@ export default function Footer() {
               <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" />
             </svg>
           </a>
-          <a href="#" aria-label="Facebook" className="site-footer__social-link">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path
-                d="M14.5 8.5H16.5V5.5H14.2C12.2 5.5 10.7 7.06 10.7 9V11H8.5V14H10.7V19H13.7V14H15.9L16.3 11H13.7V9.3C13.7 8.85 14.05 8.5 14.5 8.5Z"
-                fill="currentColor"
-              />
-            </svg>
-          </a>
           <a
             href="https://youtube.com/@shraddhainstudio"
             target="_blank"
