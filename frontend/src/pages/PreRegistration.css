@@ -126,9 +126,9 @@
 
 .prereg__slots-reset {
   background: none;
-  border: 1.5px solid var(--color-border-lavender);
+  border: 1.5px solid #d14343;
   border-radius: var(--radius-card);
-  color: var(--color-purple);
+  color: #d14343;
   cursor: pointer;
   font-size: 14px;
   font-weight: 600;
@@ -136,7 +136,8 @@
 }
 
 .prereg__slots-reset:hover {
-  background: var(--color-border-lavender);
+  background: #d14343;
+  color: #fff;
 }
 
 .prereg__slots-wrap {
