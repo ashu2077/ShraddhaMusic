@@ -19,7 +19,6 @@ const TABLE_NAME = 'Table1';
 // Instrument(s) Learning, Lesson Goals/Preferences, Parent/Guardian Full Name,
 // Parent/Guardian Email, Parent/Guardian Phone, Mailing Address,
 // Relationship to Student, Assessment Availability
-const EMAIL_COLUMN_INDEX = 7;
 
 function encodeShareUrl(url) {
   const base64 = Buffer.from(url, 'utf-8').toString('base64');
@@ -67,21 +66,6 @@ function graphBase({ driveId, itemId }) {
   return `https://graph.microsoft.com/v1.0/drives/${driveId}/items/${itemId}/workbook/tables/${TABLE_NAME}`;
 }
 
-async function findDuplicateEmail(token, driveItem, email) {
-  const res = await fetch(`${graphBase(driveItem)}/rows?$select=values`, {
-    headers: { Authorization: `Bearer ${token}` },
-  });
-  if (!res.ok) {
-    throw new Error(`Failed to list rows: ${res.status} ${await res.text()}`);
-  }
-  const data = await res.json();
-  const target = email.trim().toLowerCase();
-  return (data.value || []).some((row) => {
-    const existing = (row.values?.[0]?.[EMAIL_COLUMN_INDEX] || '').toString().trim().toLowerCase();
-    return existing === target;
-  });
-}
-
 async function addRow(token, driveItem, values) {
   const res = await fetch(`${graphBase(driveItem)}/rows`, {
     method: 'POST',
@@ -112,12 +96,6 @@ export default async function handler(req, res) {
 
     const token = await getAccessToken();
     const driveItem = await resolveDriveItem(token);
-
-    const isDuplicate = await findDuplicateEmail(token, driveItem, email);
-    if (isDuplicate) {
-      res.status(200).json({ ok: false, error: 'Email is already used - Use a different email id' });
-      return;
-    }
 
     await addRow(token, driveItem, [
       new Date().toISOString(),
