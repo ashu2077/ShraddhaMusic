@@ -47,7 +47,7 @@ function calculateAge(dob) {
   return age;
 }
 
-const RELATIONSHIP_OPTIONS = ['Parent', 'Guardian', 'Other'];
+const RELATIONSHIP_OPTIONS = ['Parent', 'Guardian', 'Self', 'Other'];
 
 const ASSESSMENT_DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Sunday'];
 
