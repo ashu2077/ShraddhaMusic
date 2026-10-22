@@ -15,10 +15,10 @@ const SHARE_URL =
 const TABLE_NAME = 'Table1';
 
 // Column order must match the Excel table's header row exactly:
-// Creation Date/Time, Student Full Name, Student Date of Birth, Student Age,
-// Instrument(s) Learning, Lesson Goals/Preferences, Parent/Guardian Full Name,
-// Parent/Guardian Email, Parent/Guardian Phone, Mailing Address,
-// Relationship to Student, Assessment Availability
+// Creation Date/Time, Student Full Name, Student Email, Student Date of Birth,
+// Student Age, Instrument(s) Learning, Lesson Goals/Preferences, How Did You
+// Find Us, Parent/Guardian Full Name, Parent/Guardian Email, Parent/Guardian
+// Phone, Mailing Address, Relationship to Student, Assessment Availability
 
 function encodeShareUrl(url) {
   const base64 = Buffer.from(url, 'utf-8').toString('base64');
@@ -88,9 +88,9 @@ export default async function handler(req, res) {
 
   try {
     const data = req.body || {};
-    const email = (data.parentEmail || '').trim();
-    if (!email) {
-      res.status(200).json({ ok: false, error: 'Email address is required.' });
+    const studentEmail = (data.studentEmail || '').trim();
+    if (!studentEmail) {
+      res.status(200).json({ ok: false, error: 'Student email address is required.' });
       return;
     }
 
@@ -100,12 +100,14 @@ export default async function handler(req, res) {
     await addRow(token, driveItem, [
       new Date().toISOString(),
       data.studentFullName || '',
+      studentEmail,
       data.studentDob || '',
       data.studentAge ?? '',
       data.instrument || '',
       data.lessonGoals || '',
+      data.howDidYouFindUs || '',
       data.parentFullName || '',
-      email,
+      data.parentEmail || '',
       data.parentPhone || '',
       '', // Mailing Address — not collected by the form, column kept for sheet compatibility
       data.relationship || '',
