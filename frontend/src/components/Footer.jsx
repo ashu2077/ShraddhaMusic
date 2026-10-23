@@ -33,17 +33,6 @@ export default function Footer() {
             </svg>
           </a>
         </div>
-
-        <nav aria-label="Footer" className="site-footer__nav">
-          <ul>
-            <li>
-              <a href="#privacy">Privacy</a>
-            </li>
-            <li>
-              <a href="#terms">Terms</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </footer>
   );
