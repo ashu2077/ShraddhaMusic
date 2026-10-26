@@ -58,7 +58,10 @@ export default function Home() {
           </p>
           <div className="hero__ctas">
             <Link to="/how-it-works" className="btn btn-gold">
-              Book a free trial
+              Book a free assessment
+            </Link>
+            <Link to="/videos" className="btn btn-secondary">
+              Listen her play
             </Link>
           </div>
         </div>
