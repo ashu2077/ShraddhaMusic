@@ -9,7 +9,7 @@ const NAV_ITEMS = [
   { label: 'How It Works', to: '/how-it-works' },
   { label: 'Course Offerings', to: '/courseware' },
   { label: 'Videos', to: '/videos' },
-  { label: 'Assessment Request', to: '/pre-registration' },
+  { label: 'Assessment Request (Free)', to: '/pre-registration' },
   { label: 'Contact', to: '/contact' },
 ];
 
