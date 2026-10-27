@@ -12,7 +12,7 @@ const LESSON_RATES = [
 const PAYMENT_TERMS = [
   {
     title: 'Monthly payments',
-    text: 'Due on the 1st of the month, by Zelle. If payment is more than 3 days late, a $10 late fee applies and lessons pause until payment is received.',
+    text: 'Coming soon.',
   },
   {
     title: 'Per-class payments',
@@ -20,7 +20,7 @@ const PAYMENT_TERMS = [
   },
   {
     title: 'Discontinuing',
-    text: 'If you need to discontinue, please let us know at least 7 days prior to the next class, by WhatsApp or email using the Contact form on the website.',
+    text: 'If you need to discontinue, please let us know at least 7 days prior to the next class, by email using the Contact form on the website.',
   },
 ];
 
@@ -91,7 +91,22 @@ export default function Pricing() {
 
         <section className="pricing__zelle">
           <h2 className="pricing__section-heading">Pay with Zelle</h2>
-          <p>Zelle information will be shared upon completion of student enrollment.</p>
+          <div className="pricing__zelle-row">
+            <span className="pricing__zelle-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="22" height="22" rx="6" fill="#6B4FBB" />
+                <path
+                  d="M7.5 7.5h9l-6 9h6"
+                  stroke="#fff"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path d="M7.5 7.5h9" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" />
+              </svg>
+            </span>
+            <p>Zelle information will be shared upon completion of student enrollment.</p>
+          </div>
         </section>
 
         <section className="pricing__cta-band">
