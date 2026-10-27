@@ -26,6 +26,11 @@ export const PAGES = {
     description:
       'Explore the Piano Foundations curriculum: structured levels for ages 4–10, from early beginner to confident player, with notation, rhythm, and two-hand coordination.',
   },
+  '/pricing': {
+    title: "Lesson Pricing | Shraddha's Music Academy",
+    description:
+      "See pricing for live 1:1 online piano lessons, the free assessment session, payment terms and the rescheduling policy at Shraddha's Music Academy.",
+  },
   '/videos': {
     title: "Piano Lesson Videos | Shraddha's Music Academy",
     description:
