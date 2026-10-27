@@ -168,6 +168,28 @@
   height: 100%;
 }
 
+.prereg__referral-other-input {
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--color-text-body);
+  border: 1.5px solid var(--color-border-lavender);
+  border-radius: 8px;
+  padding: 6px 10px;
+  width: 160px;
+  cursor: text;
+}
+
+.prereg__referral-other-input:disabled {
+  background: var(--color-lavender-200);
+  color: var(--color-text-secondary-alt);
+  cursor: not-allowed;
+}
+
+.prereg__referral-other-input:focus {
+  border-color: var(--color-purple);
+}
+
 .prereg__slots-header {
   display: flex;
   justify-content: flex-end;

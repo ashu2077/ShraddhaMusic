@@ -111,6 +111,7 @@ const INITIAL_REFERRAL = { instagram: false, youtube: false, whatsapp: false, ot
 export default function PreRegistration() {
   const [form, setForm] = useState(INITIAL_FORM);
   const [referral, setReferral] = useState(INITIAL_REFERRAL);
+  const [referralOtherText, setReferralOtherText] = useState('');
   const [availability, setAvailability] = useState({});
   const [sending, setSending] = useState(false);
   const [sendError, setSendError] = useState('');
@@ -129,7 +130,11 @@ export default function PreRegistration() {
   }
 
   function toggleReferral(key) {
-    setReferral((prev) => ({ ...prev, [key]: !prev[key] }));
+    setReferral((prev) => {
+      const next = { ...prev, [key]: !prev[key] };
+      if (key === 'other' && !next.other) setReferralOtherText('');
+      return next;
+    });
   }
 
   function selectAvailability(day, slotKey) {
@@ -212,7 +217,11 @@ export default function PreRegistration() {
       .join('; ');
 
     const howDidYouFindUs = REFERRAL_OPTIONS.filter((option) => referral[option.key])
-      .map((option) => option.label)
+      .map((option) =>
+        option.key === 'other' && referralOtherText.trim()
+          ? `Other: ${referralOtherText.trim()}`
+          : option.label
+      )
       .join('; ');
 
     setSending(true);
@@ -241,6 +250,7 @@ export default function PreRegistration() {
           setSubmitted(true);
           setForm(INITIAL_FORM);
           setReferral(INITIAL_REFERRAL);
+          setReferralOtherText('');
           setAvailability({});
         } else {
           setSendError(data.error || 'Something went wrong submitting the form. Please try again.');
@@ -353,6 +363,17 @@ export default function PreRegistration() {
                   <span className="prereg__referral-icon">{REFERRAL_ICONS[option.key]}</span>
                 )}
                 <span>{option.label}</span>
+                {option.key === 'other' && (
+                  <input
+                    type="text"
+                    className="prereg__referral-other-input"
+                    placeholder="Please specify"
+                    value={referralOtherText}
+                    disabled={!referral.other}
+                    onChange={(e) => setReferralOtherText(e.target.value)}
+                    aria-label="Please specify how you found us"
+                  />
+                )}
               </label>
             ))}
           </div>
