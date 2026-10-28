@@ -50,6 +50,11 @@
   gap: 6px;
 }
 
+.site-footer__whatsapp-icon {
+  width: 18px;
+  height: 18px;
+}
+
 .site-footer__whatsapp-number {
   font-size: 13px;
   font-weight: 600;

@@ -133,8 +133,8 @@ export default function Pricing() {
             rel="noopener noreferrer"
             className="pricing__contact-whatsapp"
           >
-            <img src="/assets/images/whatsapp-logo.png" alt="WhatsApp" />
-            (408) 854-0793
+            <img src="/assets/images/whatsapp-logo.png" alt="" />
+            WhatsApp (408) 854-0793
           </a>{' '}
           · <a href="mailto:info@shraddhasmusicacademy.com">info@shraddhasmusicacademy.com</a>
         </p>

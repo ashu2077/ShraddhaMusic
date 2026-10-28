@@ -127,8 +127,8 @@ export default function Contact() {
           rel="noopener noreferrer"
           className="contact__whatsapp"
         >
-          <img src="/assets/images/whatsapp-logo.png" alt="WhatsApp" />
-          <span>You can also reach us at (408) 854-0793</span>
+          <img src="/assets/images/whatsapp-logo.png" alt="" />
+          <span>You can also reach us on WhatsApp: (408) 854-0793</span>
         </a>
       </div>
     </section>
