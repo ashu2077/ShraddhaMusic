@@ -17,12 +17,12 @@ export const PAGES = {
       "Meet Shraddha, founder and piano instructor of Shraddha's Music Academy in the Bay Area, California, and learn her playful, student-centered approach to teaching piano.",
   },
   '/how-it-works': {
-    title: "How It Works: Free Piano Assessment & Online Lessons | Shraddha's Music Academy",
+    title: "How It Works: Free Assessment | Shraddha's Music Academy",
     description:
       'See how to get started: register, schedule a free assessment session, receive a personalized class plan, then begin 1:1 online piano sessions. Plus what you need at home.',
   },
   '/courseware': {
-    title: "Piano Foundations Curriculum & Course Levels | Shraddha's Music Academy",
+    title: "Piano Curriculum & Course Levels | Shraddha's Music Academy",
     description:
       'Explore the Piano Foundations curriculum: structured levels for ages 4–10, from early beginner to confident player, with notation, rhythm, and two-hand coordination.',
   },
