@@ -8,6 +8,16 @@ export default function Footer() {
 
         <div className="site-footer__socials">
           <a
+            href="https://wa.me/14088540793"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp (408) 854-0793"
+            className="site-footer__social-link site-footer__whatsapp"
+          >
+            <img src="/assets/images/whatsapp-logo.png" alt="" className="site-footer__whatsapp-icon" />
+            <span className="site-footer__whatsapp-number">WhatsApp (408) 854-0793</span>
+          </a>
+          <a
             href="https://www.instagram.com/shraddhainstudio"
             target="_blank"
             rel="noopener noreferrer"

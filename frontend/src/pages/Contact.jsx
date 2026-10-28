@@ -120,6 +120,16 @@ export default function Contact() {
         <p className="contact__email-note">
           Academy can also be reached via email directly by info@shraddhasmusicacademy.com
         </p>
+
+        <a
+          href="https://wa.me/14088540793"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact__whatsapp"
+        >
+          <img src="/assets/images/whatsapp-logo.png" alt="" />
+          <span>You can also reach us on WhatsApp: (408) 854-0793</span>
+        </a>
       </div>
     </section>
   );
