@@ -126,8 +126,14 @@ export default function Pricing() {
         </section>
 
         <p className="pricing__contact-note">
-          Questions? WhatsApp{' '}
-          <a href="https://wa.me/14088540793" target="_blank" rel="noopener noreferrer">
+          Questions?{' '}
+          <a
+            href="https://wa.me/14088540793"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="pricing__contact-whatsapp"
+          >
+            <img src="/assets/images/whatsapp-logo.png" alt="WhatsApp" />
             (408) 854-0793
           </a>{' '}
           · <a href="mailto:info@shraddhasmusicacademy.com">info@shraddhasmusicacademy.com</a>

@@ -98,7 +98,7 @@
   color: var(--color-purple);
 }
 
-.contact__whatsapp svg {
+.contact__whatsapp img {
   width: 22px;
   height: 22px;
   flex: 0 0 auto;

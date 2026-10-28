@@ -187,6 +187,18 @@
   text-decoration: underline;
 }
 
+.pricing__contact-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  vertical-align: middle;
+}
+
+.pricing__contact-whatsapp img {
+  width: 18px;
+  height: 18px;
+}
+
 @media (max-width: 560px) {
   .pricing__cta-band {
     flex-direction: column;
