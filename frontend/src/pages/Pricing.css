@@ -1,26 +1,32 @@
+.pricing.page-section {
+  padding-top: clamp(20px, 2.5vw, 32px);
+  padding-bottom: clamp(20px, 2.5vw, 32px);
+}
+
 .pricing__inner {
   max-width: 820px;
 }
 
 .pricing__heading {
   font-weight: 800;
-  font-size: clamp(26px, 4vw, 36px);
+  font-size: clamp(22px, 3.2vw, 30px);
   color: var(--color-purple);
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .pricing__intro {
   color: var(--color-text-secondary);
-  line-height: 1.6;
-  margin-bottom: 32px;
+  line-height: 1.5;
+  margin-bottom: 18px;
   max-width: 70ch;
+  font-size: 14px;
 }
 
 .pricing__table-wrap {
   border-radius: var(--radius-card);
   border: 1.5px solid var(--color-border-lavender);
   overflow-x: auto;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .pricing__table {
@@ -40,7 +46,7 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   text-align: left;
-  padding: 14px 20px;
+  padding: 9px 18px;
 }
 
 .pricing__table th:last-child {
@@ -48,8 +54,8 @@
 }
 
 .pricing__table td {
-  padding: 16px 20px;
-  font-size: 14px;
+  padding: 9px 18px;
+  font-size: 13.5px;
   color: var(--color-text-body);
   vertical-align: middle;
 }
@@ -71,44 +77,44 @@
 
 .pricing__section-heading {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--color-purple);
-  margin: 40px 0 16px;
+  margin: 18px 0 10px;
 }
 
 .pricing__terms-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   margin: 0;
 }
 
 .pricing__terms-item {
   border-left: 3px solid var(--color-gold);
-  padding-left: 16px;
+  padding-left: 14px;
 }
 
 .pricing__terms-item dt {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13px;
   color: var(--color-purple);
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .pricing__terms-item dd {
-  font-size: 13.5px;
-  line-height: 1.6;
+  font-size: 12.5px;
+  line-height: 1.45;
   color: var(--color-text-secondary);
   margin: 0;
 }
 
 .pricing__note {
-  margin-top: 32px;
-  font-size: 13.5px;
-  line-height: 1.6;
+  margin-top: 14px;
+  font-size: 12.5px;
+  line-height: 1.45;
   color: var(--color-text-secondary);
   border-left: 3px solid var(--color-gold);
-  padding-left: 16px;
+  padding-left: 14px;
 }
 
 .pricing__note strong {
@@ -116,23 +122,23 @@
 }
 
 .pricing__zelle {
-  margin-top: 40px;
+  margin-top: 18px;
   background: var(--color-lavender-200);
   border-radius: var(--radius-card);
-  padding: 24px 28px;
+  padding: 16px 20px;
 }
 
 .pricing__zelle-row {
   display: flex;
   align-items: center;
-  gap: 14px;
-  margin-top: 8px;
+  gap: 12px;
+  margin-top: 4px;
 }
 
 .pricing__zelle-badge {
   flex: 0 0 auto;
-  width: 36px;
-  height: 36px;
+  width: 28px;
+  height: 28px;
 }
 
 .pricing__zelle-badge svg {
@@ -141,39 +147,39 @@
 }
 
 .pricing__zelle-row p {
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 13px;
+  line-height: 1.5;
   color: var(--color-text-secondary);
   margin: 0;
 }
 
 .pricing__cta-band {
-  margin-top: 40px;
+  margin-top: 18px;
   border-radius: var(--radius-card);
   background: var(--color-purple);
-  padding: 32px;
+  padding: 18px 24px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
 }
 
 .pricing__cta-band h2 {
   font-weight: 800;
-  font-size: 20px;
+  font-size: 17px;
   color: #fff;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
 }
 
 .pricing__cta-band p {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--color-on-purple-text);
 }
 
 .pricing__contact-note {
-  margin-top: 32px;
-  font-size: 13px;
+  margin-top: 14px;
+  font-size: 12.5px;
   color: var(--color-text-secondary);
   text-align: center;
 }
