@@ -2,17 +2,17 @@ import { Link } from 'react-router-dom';
 import './Pricing.css';
 
 const LESSON_RATES = [
-  { item: 'Pay per class — 1:1 lesson (30 minutes)', price: '$35 per class' },
-  { item: 'Pay per class — second student from the same family', price: '$30 per class (save $5)' },
-  { item: 'Pay monthly — one student (flat rate)', price: '$120 per month', highlight: true },
-  { item: 'Pay monthly — second student from the same family', price: '$100 per month', highlight: true },
+  { item: 'Pay per class — 1:1 lesson (45 minutes)', price: '$35 USD per class' },
+  { item: 'Pay per class — second student from the same family', price: '$30 USD per class (save $5)' },
+  { item: 'Pay monthly — one student (flat rate)', price: '$120 USD per month', highlight: true },
+  { item: 'Pay monthly — second student from the same family', price: '$100 USD per month', highlight: true },
   { item: 'New Student Assessment (30 minutes)', price: 'Free' },
 ];
 
 const PAYMENT_TERMS = [
   {
     title: 'Monthly payments',
-    text: 'Due on the 1st of the month, by Zelle. If payment is more than 3 days late, a $10 late fee is applied, and classes are paused until dues are settled.',
+    text: 'Due on the 1st of the month, by Zelle. If payment is more than 3 days late, a $10 USD late fee is applied, and classes are paused until dues are settled.',
   },
   {
     title: 'Per-class payments',
@@ -45,7 +45,7 @@ export default function Pricing() {
       <div className="container pricing__inner">
         <h1 className="pricing__heading">Lesson Pricing</h1>
         <p className="pricing__intro">
-          Live 1:1 online piano classes for kids and adults — 30 minutes each. Every new student
+          Live 1:1 online piano classes for kids and adults — 45 minutes each. Every new student
           starts with a free 30-minute assessment session. Two ways to pay: per class, or monthly
           and save.
         </p>
@@ -55,7 +55,7 @@ export default function Pricing() {
             <thead>
               <tr>
                 <th scope="col"></th>
-                <th scope="col">Price</th>
+                <th scope="col">Price (USD)</th>
               </tr>
             </thead>
             <tbody>
