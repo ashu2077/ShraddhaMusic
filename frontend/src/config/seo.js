@@ -31,11 +31,6 @@ export const PAGES = {
     description:
       "See pricing for live 1:1 online piano lessons, the free assessment session, payment terms and the rescheduling policy at Shraddha's Music Academy.",
   },
-  '/videos': {
-    title: "Piano Lesson Videos | Shraddha's Music Academy",
-    description:
-      "Watch the latest piano videos from Shraddha in Studio on YouTube: short, friendly lessons and performances to follow along on your own keyboard.",
-  },
   '/contact': {
     title: "Contact Us | Shraddha's Music Academy",
     description:
