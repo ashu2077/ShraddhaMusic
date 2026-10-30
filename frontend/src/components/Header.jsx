@@ -5,10 +5,11 @@ import './Header.css';
 
 /*
  * Top menu, grouped so it stays uncluttered as pages are added.
- * Home is reached through the logo. A new page joins an existing group
+ * Home is listed first (the logo also goes home). A new page joins an existing group
  * (or becomes a new group) instead of adding another top-level link.
  */
 const NAV = [
+  { label: 'Home', to: '/' },
   { label: 'About', to: '/about' },
   {
     label: 'Classes',
@@ -143,6 +144,7 @@ export default function Header() {
                 <li key={entry.to}>
                   <NavLink
                     to={entry.to}
+                    end={entry.to === '/'}
                     className={({ isActive }) => 'site-header__nav-link' + (isActive ? ' is-active' : '')}
                   >
                     {entry.label}
@@ -184,11 +186,6 @@ export default function Header() {
 
         <nav aria-label="Mobile primary">
           <ul>
-            <li>
-              <NavLink to="/" end className={({ isActive }) => 'site-drawer__link' + (isActive ? ' is-active' : '')}>
-                Home
-              </NavLink>
-            </li>
             {NAV.map((entry) =>
               entry.items ? (
                 <li key={entry.id} className="site-drawer__group">
@@ -216,7 +213,11 @@ export default function Header() {
                 </li>
               ) : (
                 <li key={entry.to}>
-                  <NavLink to={entry.to} className={({ isActive }) => 'site-drawer__link' + (isActive ? ' is-active' : '')}>
+                  <NavLink
+                    to={entry.to}
+                    end={entry.to === '/'}
+                    className={({ isActive }) => 'site-drawer__link' + (isActive ? ' is-active' : '')}
+                  >
                     {entry.label}
                   </NavLink>
                 </li>

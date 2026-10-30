@@ -4,9 +4,10 @@
   z-index: 100;
 }
 
-.site-header__bar {
-  max-width: 1360px;
-  gap: clamp(24px, 3vw, 48px);
+/* `.site-header` prefix so this beats the shared .container width (1120px). */
+.site-header .site-header__bar {
+  max-width: 1400px;
+  gap: clamp(20px, 2vw, 32px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,13 +30,13 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: clamp(20px, 2.4vw, 36px);
+  gap: clamp(18px, 1.6vw, 24px);
 }
 
 .site-header__list {
   display: flex;
   align-items: center;
-  gap: clamp(18px, 2.2vw, 32px);
+  gap: clamp(14px, 1.5vw, 22px);
 }
 
 .site-header__group {
@@ -247,7 +248,7 @@
 
 /* Mid-size laptops: drop the gold button so the menu fits on one row.
    The free assessment is still under Getting Started. */
-@media (max-width: 1360px) {
+@media (max-width: 1279px) {
   .site-header__nav .site-header__cta {
     display: none;
   }
