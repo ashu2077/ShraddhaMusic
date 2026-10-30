@@ -22,7 +22,7 @@ const NAV = [
     label: 'Social Media',
     id: 'social',
     items: [
-      { label: 'Videos', to: '/videos', desc: 'Watch lessons and student performances' },
+      { label: 'YouTube', href: 'https://www.youtube.com/@shraddhainstudio', desc: 'Lessons and performances on @shraddhainstudio' },
       { label: 'Instagram', href: 'https://www.instagram.com/shraddhainstudio', desc: '@shraddhainstudio' },
     ],
   },

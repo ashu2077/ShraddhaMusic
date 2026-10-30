@@ -60,9 +60,14 @@ export default function Home() {
             <Link to="/how-it-works" className="btn btn-gold">
               Book a free assessment
             </Link>
-            <Link to="/videos" className="btn btn-secondary">
+            <a
+              href="https://www.youtube.com/@shraddhainstudio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-secondary"
+            >
               Listen her play
-            </Link>
+            </a>
           </div>
         </div>
       </section>
