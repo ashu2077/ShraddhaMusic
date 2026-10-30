@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './Pricing.css';
 
 const LESSON_RATES = [
-  { item: 'Pay per class — 1:1 lesson (30 minutes)', price: '$35 USD per class' },
+  { item: 'Pay per class — 1:1 lesson (45 minutes)', price: '$35 USD per class' },
   { item: 'Pay per class — second student from the same family', price: '$30 USD per class (save $5)' },
   { item: 'Pay monthly — one student (flat rate)', price: '$120 USD per month', highlight: true },
   { item: 'Pay monthly — second student from the same family', price: '$100 USD per month', highlight: true },
@@ -45,7 +45,7 @@ export default function Pricing() {
       <div className="container pricing__inner">
         <h1 className="pricing__heading">Lesson Pricing</h1>
         <p className="pricing__intro">
-          Live 1:1 online piano classes for kids and adults — 30 minutes each. Every new student
+          Live 1:1 online piano classes for kids and adults — 45 minutes each. Every new student
           starts with a free 30-minute assessment session. Two ways to pay: per class, or monthly
           and save.
         </p>
