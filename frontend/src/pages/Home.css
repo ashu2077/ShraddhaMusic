@@ -85,23 +85,26 @@
   flex: 0 0 auto;
 }
 
-.home-hero__media {
+/* ---------- Intro video (lower on the page; loads only on play) ---------- */
+
+.home-video {
   position: relative;
+  margin-top: 64px;
   border-radius: 24px;
   overflow: hidden;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 21 / 9;
   background: var(--color-purple-deep);
   box-shadow: 0 20px 44px rgba(36, 18, 56, 0.18);
 }
 
-.home-hero__still,
-.home-hero__video {
+.home-video__still,
+.home-video__player {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.home-hero__play {
+.home-video__play {
   position: absolute;
   left: 20px;
   bottom: 20px;
@@ -119,7 +122,7 @@
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
 
-.home-hero__play-icon {
+.home-video__play-icon {
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -130,7 +133,7 @@
   justify-content: center;
 }
 
-.home-hero__play-icon svg {
+.home-video__play-icon svg {
   width: 14px;
   height: 14px;
 }
@@ -183,21 +186,27 @@
 }
 
 .home-why__card {
-  background: #fff;
-  border: 1px solid var(--color-border-lavender);
+  background: var(--color-purple);
+  color: #fff;
   border-radius: var(--radius-card);
   padding: 26px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.home-why__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(62, 31, 102, 0.28);
 }
 
 .home-why__num {
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  background: var(--color-lavender-100);
-  color: var(--color-purple);
+  background: var(--color-gold);
+  color: var(--color-purple-darkest);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -213,7 +222,7 @@
 .home-why__text {
   font-size: 15px;
   line-height: 1.6;
-  color: var(--color-text-secondary);
+  color: var(--color-on-purple-text);
 }
 
 /* Level cards */
@@ -276,49 +285,52 @@
   line-height: 1.5;
 }
 
-/* Meet Shraddha */
+/* Meet Shraddha — sits in the hero, beside the headline */
 .home-meet {
-  margin-top: 64px;
   background: var(--color-purple);
   color: #fff;
   border-radius: 24px;
   overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: center;
+  box-shadow: 0 20px 44px rgba(36, 18, 56, 0.18);
 }
 
 .home-meet__photo {
-  width: 100%;
-  max-width: 380px;
-  justify-self: center;
+  width: 118%;
+  max-width: none;
+  height: auto;
   align-self: end;
+  margin-left: -9%;
+  margin-top: 24px;
   /* the photo file has a faint 1–2px edge; trim it */
   clip-path: inset(3px);
 }
 
 .home-meet__text {
-  padding: clamp(28px, 4vw, 48px);
+  padding: clamp(22px, 2.6vw, 34px) clamp(20px, 2.6vw, 34px) clamp(22px, 2.6vw, 34px) 8px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 }
 
 .home-meet__title {
   font-weight: 800;
-  font-size: clamp(24px, 2.8vw, 34px);
+  font-size: clamp(20px, 2vw, 26px);
+  line-height: 1.2;
   color: #fff;
 }
 
 .home-meet__quote {
-  font-size: 19px;
+  font-size: 16px;
   line-height: 1.55;
   font-style: italic;
   color: #fff;
 }
 
 .home-meet__bio {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.6;
   color: var(--color-on-purple-text);
 }
@@ -375,9 +387,9 @@
   color: var(--color-text-secondary);
 }
 
-/* Pricing teaser */
+/* Pricing teaser — directly under the getting-started steps */
 .home-price {
-  margin-top: 64px;
+  margin-top: 32px;
   background: var(--color-lavender-100);
   border-radius: 24px;
   padding: clamp(28px, 4vw, 44px);
@@ -409,4 +421,25 @@
 .home-price__note a {
   font-weight: 700;
   color: var(--color-purple);
+}
+
+/* ---------- Narrow screens ---------- */
+
+@media (max-width: 560px) {
+  .home-meet {
+    grid-template-columns: 1fr;
+  }
+
+  .home-meet__photo {
+    max-width: 260px;
+    justify-self: center;
+  }
+
+  .home-meet__text {
+    padding: 4px 22px 24px;
+  }
+
+  .home-video {
+    aspect-ratio: 16 / 9;
+  }
 }
