@@ -74,7 +74,7 @@ export default function Home() {
                 Book your free 30-min assessment
               </Link>
               <Link to="/how-it-works" className="btn btn-secondary home-hero__btn">
-                See how it works
+                Getting Started
               </Link>
             </div>
             <ul className="home-hero__trust">
