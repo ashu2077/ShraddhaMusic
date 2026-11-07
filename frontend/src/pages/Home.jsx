@@ -71,6 +71,12 @@ export default function Home() {
               <Link to="/how-it-works" className="btn btn-secondary home-hero__btn">
                 Getting Started
               </Link>
+              <a href="#latest-reel" className="home-hero__listen">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8 5v14l11-7z" fill="currentColor" />
+                </svg>
+                Listen to her play
+              </a>
             </div>
             <ul className="home-hero__trust">
               {TRUST.map((t) => (
@@ -168,7 +174,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="home-insta" aria-labelledby="home-insta">
+        <section id="latest-reel" className="home-insta" aria-labelledby="home-insta">
           <div className="home-insta__text">
             <span className="home-insta__eyebrow">Latest from Instagram</span>
             <h2 id="home-insta" className="home-section__title">Watch Shraddha play</h2>

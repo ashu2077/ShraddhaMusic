@@ -62,6 +62,33 @@
   font-weight: 700;
 }
 
+/* "Listen to her play" — a text link that jumps to the Instagram reel */
+.home-hero__listen {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 54px;
+  padding: 0 6px;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-purple);
+  text-decoration: underline;
+  text-decoration-color: var(--color-gold);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+.home-hero__listen:hover {
+  color: var(--color-purple-hover);
+  text-decoration-color: var(--color-purple);
+}
+
+.home-hero__listen svg {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+}
+
 .home-hero__trust {
   display: flex;
   flex-wrap: wrap;
@@ -89,6 +116,7 @@
 
 .home-insta {
   margin-top: 64px;
+  scroll-margin-top: 24px; /* breathing room when "Listen to her play" jumps here */
   background: var(--color-purple);
   border-radius: 24px;
   padding: clamp(24px, 4vw, 48px);
@@ -111,7 +139,7 @@
 
 .home-insta__eyebrow {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 16px; /* was 12px; +3pt (≈4px) */
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-gold);
