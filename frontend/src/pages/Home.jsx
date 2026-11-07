@@ -1,14 +1,19 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import InstagramReel from '../components/InstagramReel.jsx';
 import './Home.css';
 
 /*
  * Home — "Clear first screen" layout.
  * The headline, pitch and main button are visible straight away, next to an
  * introduction to Shraddha. Getting started and pricing follow right away,
- * then the course levels, why it works, and the intro video (which only
- * loads when someone presses play). Every section links to a next page.
+ * then the course levels, why it works, and Shraddha's latest Instagram reel
+ * (which only loads when scrolled near). Every section links to a next page.
  */
+
+const INSTAGRAM_PROFILE = 'https://www.instagram.com/shraddhainstudio/';
+// Latest reel on @shraddhainstudio (posted Oct 26, 2026). To feature a newer
+// one, paste its link here: https://www.instagram.com/reel/<code>/
+const LATEST_REEL = 'https://www.instagram.com/reel/De-BaQhh8Zl/';
 
 const TRUST = ['Free 30-minute assessment', '45-minute live lessons', 'From $35 a class'];
 
@@ -48,17 +53,7 @@ function Check() {
   );
 }
 
-function Play() {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M8 5v14l11-7z" fill="currentColor" />
-    </svg>
-  );
-}
-
 export default function Home() {
-  const [playing, setPlaying] = useState(false);
-
   return (
     <>
       <section className="home-hero">
@@ -173,36 +168,18 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="home-video" aria-label="Intro video">
-          {playing ? (
-            <video
-              className="home-video__player"
-              src="/assets/videos/intro-piano.mp4"
-              poster="/assets/images/home-piano-still.jpg"
-              autoPlay
-              controls
-              playsInline
-            >
-              Your browser does not support the video tag.
-            </video>
-          ) : (
-            <>
-              <img
-                src="/assets/images/home-piano-still.jpg"
-                alt="Hands playing a grand piano"
-                className="home-video__still"
-                width="1200"
-                height="675"
-                loading="lazy"
-              />
-              <button type="button" className="home-video__play" onClick={() => setPlaying(true)}>
-                <span className="home-video__play-icon">
-                  <Play />
-                </span>
-                Watch the 15-second intro
-              </button>
-            </>
-          )}
+        <section className="home-insta" aria-labelledby="home-insta">
+          <div className="home-insta__text">
+            <span className="home-insta__eyebrow">Latest from Instagram</span>
+            <h2 id="home-insta" className="home-section__title">Watch Shraddha play</h2>
+            <p className="home-insta__lead">
+              Shraddha's latest piano covers, posted on Instagram at @shraddhainstudio.
+            </p>
+            <a href={INSTAGRAM_PROFILE} target="_blank" rel="noopener noreferrer" className="btn btn-primary home-hero__btn">
+              Follow @shraddhainstudio
+            </a>
+          </div>
+          <InstagramReel url={LATEST_REEL} label="Watch Shraddha's latest reel on Instagram" />
         </section>
       </div>
     </>
