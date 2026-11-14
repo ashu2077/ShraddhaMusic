@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 import Seo from './Seo.jsx';
-import DiwaliBanner from './DiwaliBanner.jsx';
 
 export default function Layout() {
   const location = useLocation();
@@ -16,7 +15,6 @@ export default function Layout() {
     <>
       <Seo />
       <Header />
-      <DiwaliBanner />
       <main>
         <Outlet />
       </main>
